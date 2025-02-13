@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{# {% extends 'base.html.twig' %}
 
 {% block body %}
     <!-- N A V B A R -->
@@ -59,33 +59,15 @@
     <!-- P I C T U R E - H E A D E R -->
     <!-- C O M M E N T -->
     <section id="comments" class="row">
-        <div class="bg-comment col-12 col-md-4">
-            <img src="/assets/image/icone-camel.png" class="icone-comment" alt="...">
-            <h1 class="t-comment">Lorem ipsum dolor sit amet</h1>
-            <p class="p-comment col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-            </p>
-        </div>
-        <div class="bg-comment col-12 col-md-4">
-            <img src="/assets/image/icone-camp.png" class="icone-comment" alt="...">
-            <h1 class="t-comment">Lorem ipsum dolor sit amet</h1>
-            <p class="p-comment col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-            </p>
-        </div>
-        <div class="bg-comment col-12 col-md-4">
-            <img src="/assets/image/icone-4x4.png" class="icone-comment" alt="...">
-            <h1 class="t-comment">Lorem ipsum dolor sit amet</h1>
-            <p class="p-comment col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-            </p>
-        </div>
+        {% for commentaire in commentaires %}
+            <div class="bg-comment col-12 col-md-4">
+                <img src="/assets/image/icone-camel.png" class="icone-comment" alt="...">
+                <h1 class="t-comment">{{ commentaire.titre }}</h1>
+                <p class="p-comment col-8">{{ commentaire.description }}</p>
+            </div>
+        {% else %}
+            <p>Aucun commentaire à afficher.</p>
+        {% endfor %}
     </section>
     <!-- C O M M E N T -->
     <!-- A R T I C L E - L E F T -->
@@ -249,33 +231,15 @@
     <!-- A R T I C L E - C O N T A C T -->
     <!-- C O M M E N T - F O O T E R -->
     <section id="comments-footer" class="row">
+        {% for commentaire in commentaires %}
         <div class="bg-comment col-12 col-md-4">
             <img src="/assets/image/icone-camel.png" class="icone-comment" alt="...">
-            <h1 class="t-comment">Lorem ipsum dolor sit amet</h1>
-            <p class="p-comment col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-            </p>
+            <h1 class="t-comment">{{ commentaire.titre }}</h1>
+            <p class="p-comment col-8">{{ commentaire.description }}</p>
         </div>
-        <div class="bg-comment col-12 col-md-4">
-            <img src="/assets/image/icone-camp.png" class="icone-comment" alt="...">
-            <h1 class="t-comment">Lorem ipsum dolor sit amet</h1>
-            <p class="p-comment col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-            </p>
-        </div>
-        <div class="bg-comment col-12 col-md-4">
-            <img src="/assets/image/icone-4x4.png" class="icone-comment" alt="...">
-            <h1 class="t-comment">Lorem ipsum dolor sit amet</h1>
-            <p class="p-comment col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-            </p>
-        </div>
+        {% else %}
+            <p>Aucun commentaire à afficher.</p>
+        {% endfor %}
     </section>
     <!-- C O M M E N T - F O O T E R -->
     <!-- P I C T U R E - F O O T E R -->
@@ -293,4 +257,4 @@
         <img src="/assets/image/icone-insta-footer.png" class="icone-instagram" alt="Icône Instagram">
     </footer>
     <!-- F O O T E R -->
-{% endblock %}
+{% endblock %} #}

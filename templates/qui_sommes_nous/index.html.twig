@@ -18,13 +18,10 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ path('app_circuit') }}">Nos excursions privées</a>
+                            <a class="nav-link" href="{{ path('app_circuit') }}">Nos circuits privées</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ path('app_excursion') }}">Nos excursions privées</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ path('app_voyage_luxe') }}">Voyage de luxe</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="{{ path('app_qui_sommes_nous') }}">Qui sommes-nous ?</a>
@@ -46,7 +43,7 @@
     <section id="picture-header">
         <picture>
             <source srcset="/assets/image/picture-1-phone.jpg" media="(max-width: 768px)">
-            <img src="/assets/image/picture-1.jpg" class="picture" alt="...">
+            <img src="/assets/image/picture-header-index.jpg" class="picture" alt="...">
         </picture>
         <div class="text-container">
             <div class="top-line">
@@ -58,68 +55,26 @@
     </section>
     <!-- P I C T U R E - H E A D E R -->
     <!-- C O M M E N T -->
-    <section id="comments" class="row">
-        <div class="bg-comment col-12 col-md-4">
-            <img src="/assets/image/icone-camel.png" class="icone-comment" alt="...">
-            <h1 class="t-comment">Lorem ipsum dolor sit amet</h1>
-            <p class="p-comment col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-            </p>
-        </div>
-        <div class="bg-comment col-12 col-md-4">
-            <img src="/assets/image/icone-camp.png" class="icone-comment" alt="...">
-            <h1 class="t-comment">Lorem ipsum dolor sit amet</h1>
-            <p class="p-comment col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-            </p>
-        </div>
-        <div class="bg-comment col-12 col-md-4">
-            <img src="/assets/image/icone-4x4.png" class="icone-comment" alt="...">
-            <h1 class="t-comment">Lorem ipsum dolor sit amet</h1>
-            <p class="p-comment col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-            </p>
-        </div>
-    </section>
+    {% include '_partials/comments.html.twig' with { 'commentaires': commentaires } %}
     <!-- C O M M E N T -->
     <!-- A R T I C L E - R I G H T -->
     <section id="article-right" class="row">
         <div class="bg-article order-2 order-md-1 col-4">
-            <h1 class="t-article">Lorem ipsum dolor sit amet</h1>
-            <p class="p-article col-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim veniam, quis nostrud.
-            </p>
+            <h1 class="t-article">{{ article5.titre}}</h1>
+            <p class="p-article col-10">{{ article5.description}}</p>
         </div>
-        <img src="/assets/image/picture-2.jpg" class="picture-article order-1 order-md-2 col-8" alt="...">
+       <img src="{{ asset('assets/image/' ~ article5.photo) }}" class="picture-article order-1 order-md-2 col-8" alt="...">
         <img src="/assets/image/icone-4x4.png" class="icone-comment order-3" alt="...">
         </div>
     </section>
     <!-- A R T I C L E - R I G H T -->
     <!-- A R T I C L E - L E F T -->
     <section id="article-left" class="row">
-        <img src="/assets/image/picture-3.jpg" class="picture-article" alt="...">
+     <img src="{{ asset('assets/image/' ~ article6.photo) }}" class="picture-article" alt="...">
         <img src="/assets/image/icone-palmier.png" class="icone-comment" alt="...">
         <div class="bg-article">
-            <h1 class="t-article">Lorem ipsum dolor sit amet</h1>
-            <p class="p-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim veniam, quis nostrud.
-            </p>
+            <h1 class="t-article">{{ article6.titre}}</h1>
+            <p class="p-article">{{ article6.description}}</p>
         </div>
     </section>
     <!-- A R T I C L E - L E F T -->
@@ -128,58 +83,24 @@
         <div class="bg-article order-2 order-md-1">
             <div class="contact-phone">
                 <img src="/assets/image/icone-phone.png" class="icone-info" alt="...">
-                <h1 class="t-article">Lorem ipsum dolor sit amet</h1>
-                <p class="p-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                <h1 class="t-article">Téléphone :</h1>
+                <p class="p-article">Vous pouvez nous appeler du lundi au vendredi, de 9h à 17h, pour toute information. Notre équipe est à votre écoute et prête à répondre à vos questions.
                 </p>
-                <p class="contact-info">06 85 98 65 23</p>
+                <p class="contact-info">{{ contact.telephone }}</p>
             </div>
             <div class="contact-mail">
                 <img src="/assets/image/icone-mail.png" class="icone-info" alt="...">
-                <h1 class="t-article">Lorem ipsum dolor sit amet</h1>
-                <p class="p-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                <h1 class="t-article">Adresse e-mail</h1>
+                <p class="p-article">Vous pouvez nous contacter par e-mail à tout moment, selon vos besoins. Nous vous répondrons dans les plus brefs délais avec plaisir.
                 </p>
-                <p class="contact-info">contact@voyagedeluxe.fr</p>
+                <p class="contact-info">{{ contact.messagerie }}</p>
             </div>
         </div>
         <img src="/assets/image/picture-contact.jpg" class="picture-article order-1 order-md-2" alt="...">
     </section>
     <!-- A R T I C L E - C O N T A C T -->
     <!-- C O M M E N T - F O O T E R -->
-    <section id="comments-footer" class="row">
-        <div class="bg-comment col-12 col-md-4">
-            <img src="/assets/image/icone-camel.png" class="icone-comment" alt="...">
-            <h1 class="t-comment">Lorem ipsum dolor sit amet</h1>
-            <p class="p-comment col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-            </p>
-        </div>
-        <div class="bg-comment col-12 col-md-4">
-            <img src="/assets/image/icone-camp.png" class="icone-comment" alt="...">
-            <h1 class="t-comment">Lorem ipsum dolor sit amet</h1>
-            <p class="p-comment col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-            </p>
-        </div>
-        <div class="bg-comment col-12 col-md-4">
-            <img src="/assets/image/icone-4x4.png" class="icone-comment" alt="...">
-            <h1 class="t-comment">Lorem ipsum dolor sit amet</h1>
-            <p class="p-comment col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-            </p>
-        </div>
-    </section>
+    {% include '_partials/comments-footer.html.twig' with { 'commentaires': commentaires } %}
     <!-- C O M M E N T - F O O T E R -->
     <!-- P I C T U R E - F O O T E R -->
     <section id="picture-footer">

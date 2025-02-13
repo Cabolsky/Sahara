@@ -1,0 +1,11 @@
+    <section id="comments-footer" class="row">
+    {% for commentaire in commentaires %}
+        <div class="bg-comment col-12 col-md-4">
+            <img src="{{ commentaire.icone }}" class="icone-comment" alt="...">
+            <h1 class="t-comment">{{ commentaire.titre }}</h1>
+            <p class="p-comment col-8">{{ commentaire.description }}</p>
+        </div>
+    {% else %}
+        <p>Aucun commentaire à afficher.</p>
+    {% endfor %}
+    </section>
