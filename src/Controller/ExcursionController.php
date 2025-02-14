@@ -1,12 +1,11 @@
 <?php
 
-// src/Controller/ExcursionController.php
-
 namespace App\Controller;
 
 use App\Repository\CommentairesRepository;
 use App\Repository\ContactRepository;
 use App\Repository\ArticleRepository;
+use App\Repository\ExcursionsRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
@@ -16,65 +15,54 @@ class ExcursionController extends AbstractController
     private $commentairesRepository;
     private $contactRepository;
     private $articleRepository;
+    private $excursionsRepository;
 
     public function __construct(
         CommentairesRepository $commentairesRepository,
         ContactRepository $contactRepository,
-        ArticleRepository $articleRepository
-    )
-    {
+        ArticleRepository $articleRepository,
+        ExcursionsRepository $excursionsRepository
+    ) {
         $this->commentairesRepository = $commentairesRepository;
-        $this->contactRepository = $contactRepository;
-        $this->articleRepository = $articleRepository;
+        $this->contactRepository      = $contactRepository;
+        $this->articleRepository      = $articleRepository;
+        $this->excursionsRepository   = $excursionsRepository;
     }
 
     #[Route('/excursion', name: 'app_excursion')]
     public function index(): Response
     {
-        $excursions = [
-            1 => 'Excursion 1',
-            2 => 'Excursion 2',
-            3 => 'Excursion 3',
-        ];
-
+        $excursions = $this->excursionsRepository->findAll();
         $commentaires = $this->commentairesRepository->findAll();
-
-        $contact = $this->contactRepository->findOneBy([]);
-
-        $article4 = $this->articleRepository->find(4);
+        $contact      = $this->contactRepository->findOneBy([]);
+        $article4     = $this->articleRepository->find(4);
 
         return $this->render('excursion/index.html.twig', [
-            'excursions' => $excursions,
+            'excursions'   => $excursions,
             'commentaires' => $commentaires,
-            'contact' => $contact,
-            'article4' => $article4,
+            'contact'      => $contact,
+            'article4'     => $article4,
         ]);
     }
 
     #[Route('/excursion/{id}', name: 'excursion_detail')]
     public function detail($id): Response
     {
-        $excursions = [
-            1 => 'Excursion 1',
-            2 => 'Excursion 2',
-            3 => 'Excursion 3',
-        ];
+        $excursion = $this->excursionsRepository->find($id);
 
-        if (!isset($excursions[$id])) {
+        if (!$excursion) {
             throw $this->createNotFoundException('Excursion non trouvée');
         }
 
         $commentaires = $this->commentairesRepository->findAll();
-
-        $contact = $this->contactRepository->findOneBy([]);
-
-        $article4 = $this->articleRepository->find(4);
+        $contact      = $this->contactRepository->findOneBy([]);
+        $article4     = $this->articleRepository->find(4);
 
         return $this->render('excursion/detail.html.twig', [
-            'excursion' => $excursions[$id],
+            'excursion'    => $excursion,
             'commentaires' => $commentaires,
-            'contact' => $contact,
-            'article4' => $article4,
+            'contact'      => $contact,
+            'article4'     => $article4,
         ]);
     }
 }

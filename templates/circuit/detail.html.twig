@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+
     <!-- N A V B A R -->
     <section id="navbar">
         <div class="bg-navbar"></div>
@@ -103,8 +104,8 @@
         <img src="{{ asset('assets/image/' ~ circuit.photoJour1) }}" class="picture-article" alt="...">
         <img src="/assets/image/icone-palmier.png" class="icone-comment" alt="...">
         <div class="bg-article">
-            <h1 class="t-article">{{ circuit.titreJour1 }}</h1> <!-- Titre jour 1 -->
-            <p class="p-article">{{ circuit.texteJour1 }}</p> <!-- Texte jour 1 -->
+            <h1 class="t-article">{{ circuit.titreJour1 }}</h1> 
+            <p class="p-article">{{ circuit.texteJour1 }}</p> 
         </div>
     </section>
     <!-- A R T I C L E - L E F T -->
@@ -112,8 +113,8 @@
     <!-- A R T I C L E - R I G H T -->
     <section id="article-right" class="row">
         <div class="bg-article order-2 order-md-1 col-4">
-            <h1 class="t-article">{{ circuit.titreJour2 }}</h1> <!-- Titre jour 2 -->
-            <p class="p-article col-10">{{ circuit.texteJour2 }}</p> <!-- Texte jour 2 -->
+            <h1 class="t-article">{{ circuit.titreJour2 }}</h1> 
+            <p class="p-article col-10">{{ circuit.texteJour2 }}</p> 
         </div>
         <img src="{{ asset('assets/image/' ~ circuit.photoJour2) }}" class="picture-article order-1 order-md-2 col-8" alt="...">
         <img src="/assets/image/icone-4x4.png" class="icone-comment order-3" alt="...">
@@ -125,8 +126,8 @@
         <img src="{{ asset('assets/image/' ~ circuit.photoJour3) }}" class="picture-article" alt="...">
         <img src="/assets/image/icone-palmier.png" class="icone-comment" alt="...">
         <div class="bg-article">
-            <h1 class="t-article">{{ circuit.titreJour3 }}</h1> <!-- Titre jour 3 -->
-            <p class="p-article">{{ circuit.texteJour3 }}</p> <!-- Texte jour 3 -->
+            <h1 class="t-article">{{ circuit.titreJour3 }}</h1>
+            <p class="p-article">{{ circuit.texteJour3 }}</p> 
         </div>
     </section>
     <!-- A R T I C L E - L E F T -->
@@ -138,13 +139,13 @@
                 <img src="/assets/image/icone-phone.png" class="icone-info" alt="...">
                 <h1 class="t-article">Téléphone :</h1>
                 <p class="p-article">Vous pouvez nous appeler du lundi au vendredi, de 9h à 17h, pour toute information. Notre équipe est à votre écoute et prête à répondre à vos questions.</p>
-                <p class="contact-info">{{ contact.telephone }}</p> <!-- Téléphone de contact -->
+                <p class="contact-info">{{ contact.telephone }}</p>
             </div>
             <div class="contact-mail">
                 <img src="/assets/image/icone-mail.png" class="icone-info" alt="...">
                 <h1 class="t-article">Adresse e-mail</h1>
                 <p class="p-article">Vous pouvez nous contacter par e-mail à tout moment, selon vos besoins. Nous vous répondrons dans les plus brefs délais avec plaisir.</p>
-                <p class="contact-info">{{ contact.messagerie }}</p> <!-- Email de contact -->
+                <p class="contact-info">{{ contact.messagerie }}</p> 
             </div>
         </div>
         <img src="/assets/image/picture-contact.jpg" class="picture-article order-1 order-md-2" alt="...">
@@ -171,4 +172,5 @@
         <img src="/assets/image/icone-insta-footer.png" class="icone-instagram" alt="Icône Instagram">
     </footer>
     <!-- F O O T E R -->
+
 {% endblock %}

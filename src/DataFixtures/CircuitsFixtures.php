@@ -10,7 +10,7 @@ class CircuitsFixtures extends Fixture
 {
     public function load(ObjectManager $manager): void
     {
-        // Circuit 1
+
         $circuit1 = new Circuits();
         $circuit1->setPhotoCards('card-circuit-1.jpg')
             ->setTitreCards('Circuits à travers le dessert Agadir')
@@ -35,7 +35,6 @@ class CircuitsFixtures extends Fixture
             ->setDisponible(true);
         $manager->persist($circuit1);
 
-        // Circuit 2
         $circuit2 = new Circuits();
         $circuit2->setPhotoCards('card-circuit-2.jpg')
             ->setTitreCards('Circuits à travers le désert de Marrakech')
@@ -60,7 +59,6 @@ class CircuitsFixtures extends Fixture
             ->setDisponible(true);
         $manager->persist($circuit2);
 
-        // Circuit 3
         $circuit3 = new Circuits();
         $circuit3->setPhotoCards('card-circuit-3.jpg')
             ->setTitreCards('Circuits aventure à Fès')
@@ -85,7 +83,6 @@ class CircuitsFixtures extends Fixture
             ->setDisponible(true);
         $manager->persist($circuit3);
 
-        // Circuit 4
         $circuit4 = new Circuits();
         $circuit4->setPhotoCards('card-circuit-1.jpg')
             ->setTitreCards('Circuits nature à Chefchaouen')
@@ -110,7 +107,6 @@ class CircuitsFixtures extends Fixture
             ->setDisponible(true);
         $manager->persist($circuit4);
 
-        // Circuit 5
         $circuit5 = new Circuits();
         $circuit5->setPhotoCards('card-circuit-2.jpg')
             ->setTitreCards('Circuits en montagne à Atlas')
@@ -135,7 +131,6 @@ class CircuitsFixtures extends Fixture
             ->setDisponible(true);
         $manager->persist($circuit5);
 
-        // Circuit 6
         $circuit6 = new Circuits();
         $circuit6->setPhotoCards('card-circuit-3.jpg')
             ->setTitreCards('Circuits à travers le Rif')
@@ -160,7 +155,6 @@ class CircuitsFixtures extends Fixture
             ->setDisponible(true);
         $manager->persist($circuit6);
 
-        // Circuit 7
         $circuit7 = new Circuits();
         $circuit7->setPhotoCards('card-circuit-1.jpg')
             ->setTitreCards('Circuits à travers les gorges de Todra')
@@ -185,7 +179,6 @@ class CircuitsFixtures extends Fixture
             ->setDisponible(true);
         $manager->persist($circuit7);
 
-        // Circuit 8
         $circuit8 = new Circuits();
         $circuit8->setPhotoCards('card-circuit-2.jpg')
             ->setTitreCards('Circuits de randonnée dans le Haut Atlas')
@@ -210,7 +203,6 @@ class CircuitsFixtures extends Fixture
             ->setDisponible(true);
         $manager->persist($circuit8);
 
-        // Circuit 9
         $circuit9 = new Circuits();
         $circuit9->setPhotoCards('card-circuit-3.jpg')
             ->setTitreCards('Circuits de découverte de l\'Oasis de Figuig')
@@ -235,7 +227,6 @@ class CircuitsFixtures extends Fixture
             ->setDisponible(true);
         $manager->persist($circuit9);
 
-        // Circuit 10
         $circuit10 = new Circuits();
         $circuit10->setPhotoCards('card-circuit-1.jpg')
             ->setTitreCards('Circuits à travers le désert de Merzouga')
@@ -260,7 +251,6 @@ class CircuitsFixtures extends Fixture
             ->setDisponible(true);
         $manager->persist($circuit10);
 
-        // Circuit 11
         $circuit11 = new Circuits();
         $circuit11->setPhotoCards('card-circuit-2.jpg')
             ->setTitreCards('Circuits gastronomiques à Marrakech')
@@ -310,7 +300,6 @@ class CircuitsFixtures extends Fixture
             ->setDisponible(true);
         $manager->persist($circuit12);
 
-        // Circuit 13
         $circuit13 = new Circuits();
         $circuit13->setPhotoCards('card-circuit-1.jpg')
             ->setTitreCards('Circuits au cœur des montagnes du Rif')
@@ -335,7 +324,6 @@ class CircuitsFixtures extends Fixture
             ->setDisponible(true);
         $manager->persist($circuit13);
 
-        // Circuit 14
         $circuit14 = new Circuits();
         $circuit14->setPhotoCards('card-circuit-2.jpg')
             ->setTitreCards('Circuits de découverte de l\'Atlas')
@@ -360,7 +348,6 @@ class CircuitsFixtures extends Fixture
             ->setDisponible(false);
         $manager->persist($circuit14);
 
-        // Circuit 15
         $circuit15 = new Circuits();
         $circuit15->setPhotoCards('card-circuit-3.jpg')
             ->setTitreCards('Circuits culturels à travers Fès')

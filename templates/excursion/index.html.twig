@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+
     <!-- N A V B A R -->
     <section id="navbar">
         <div class="bg-navbar"></div>
@@ -39,6 +40,7 @@
         </nav>
     </section>
     <!-- N A V B A R -->
+
     <!-- P I C T U R E - H E A D E R -->
     <section id="picture-header">
         <picture>
@@ -54,9 +56,11 @@
         </div>
     </section>
     <!-- P I C T U R E - H E A D E R -->
+
     <!-- C O M M E N T -->
     {% include '_partials/comments.html.twig' with { 'commentaires': commentaires } %}
     <!-- C O M M E N T -->
+
     <!-- A R T I C L E - L E F T -->
     <section id="article-left" class="row">
         <img src="{{ asset('assets/image/' ~ article4.photo) }}" class="picture-article" alt="...">
@@ -67,121 +71,44 @@
         </div>
     </section>
     <!-- A R T I C L E - L E F T -->
+
     <!-- C A R D S - C I R C U I T S -->
     <section id="cards-circuit" class="row">
-        <div class="cards col-12 col-md-4">
-            <img src="/assets/image/card-circuit-1.jpg" class="picture-cards" alt="...">
-            <div class="bg-dispo">
-                <div class="circle"></div>
-                <p class="p-dispo mt-3">Disponible</p>
-            </div>
-            <div class="bg-article">
-                <h1 class="t-article">Lorem ipsum dolor sit</h1>
-                <p class="p-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    exercitation ullamco laboris nisiut aliquip ex ea commodo.
-                </p>
-                <div class="row col-12 col-md-11">
-                    <div class="containt-info col-4">
-                        <img src="/assets/image/icone-group.png" class="icone-info" alt="...">
-                        <p class="p-info">Personnes :</p>
-                        <p class="p-details">2-6</p>
+        {% for excursion in excursions %}
+            <div class="cards col-12 col-md-4 {% if not excursion.disponible %} unavailable {% endif %}">
+                {% if not excursion.disponible %}
+                    <div class="soon-icon">
+                        <img src="/assets/image/icone-soon.png" class="icone-soon" alt="Bientôt disponible">
                     </div>
-                    <div class="containt-info col-4">
-                        <img src="/assets/image/icone-clock.png" class="icone-info" alt="...">
-                        <p class="p-info">Durée :</p>
-                        <p class="p-details">6 jours.</p>
+                {% endif %}
+                <img src="{{ asset('assets/image/' ~ excursion.photoCards) }}" class="picture-cards" alt="...">
+                <div class="bg-article">
+                    <h1 class="t-article">{{ excursion.titreCards}}</h1>
+                    <p class="p-article">{{ excursion.texteCards}}</p>
+                    <div class="row col-12 col-md-11">
+                        <div class="containt-info col-4">
+                            <img src="/assets/image/icone-group.png" class="icone-info" alt="...">
+                            <p class="p-info">Personnes :</p>
+                            <p class="p-details">{{ excursion.nombrePersonnes}}</p>
+                        </div>
+                        <div class="containt-info col-4">
+                            <img src="/assets/image/icone-clock.png" class="icone-info" alt="...">
+                            <p class="p-info">Durée :</p>
+                            <p class="p-details">{{ excursion.duree}}</p>
+                        </div>
+                        <div class="containt-info col-4">
+                            <img src="/assets/image/icone-price.png" class="icone-info" alt="...">
+                            <p class="p-info">A partir de :</p>
+                            <p class="p-details">{{ excursion.prix}} €</p>
+                        </div>
                     </div>
-                    <div class="containt-info col-4">
-                        <img src="/assets/image/icone-price.png" class="icone-info" alt="...">
-                        <p class="p-info">A partir de :</p>
-                        <p class="p-details">599 €</p>
-                    </div>
+                    <a href="{{ path('excursion_detail', {'id':excursion.id}) }}" class="btn">En savoir plus</a>
                 </div>
-                <a href="{{ path('excursion_detail', {'id': 1}) }}" class="btn">En savoir plus</a>
             </div>
-        </div>
-        <div class="cards col-12 col-md-4">
-            <img src="/assets/image/card-circuit-2.jpg" class="picture-cards" alt="...">
-            <div class="bg-dispo">
-                <div class="circle"></div>
-                <p class="p-dispo mt-3">Disponible</p>
-            </div>
-            <div class="bg-article">
-                <h1 class="t-article">Lorem ipsum dolor sit</h1>
-                <p class="p-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    exercitation ullamco laboris nisiut aliquip ex ea commodo.
-                </p>
-                <div class="row col-12 col-md-11">
-                    <div class="containt-info col-4">
-                        <img src="/assets/image/icone-group.png" class="icone-info" alt="...">
-                        <p class="p-info">Personnes :
-                        </p>
-                        <p class="p-details">2-6
-                        </p>
-                    </div>
-                    <div class="containt-info col-4">
-                        <img src="/assets/image/icone-clock.png" class="icone-info" alt="...">
-                        <p class="p-info">Durée :
-                        </p>
-                        <p class="p-details">6 jours.
-                        </p>
-                    </div>
-                    <div class="containt-info col-4">
-                        <img src="/assets/image/icone-price.png" class="icone-info" alt="...">
-                        <p class="p-info">A partir de :
-                        </p>
-                        <p class="p-details">599 €
-                        </p>
-                    </div>
-                </div>
-                <a href="{{ path('excursion_detail', {'id': 2}) }}" class="btn">En savoir plus</a>
-            </div>
-        </div>
-        <div class="cards col-12 col-md-4">
-            <img src="/assets/image/card-circuit-3.jpg" class="picture-cards" alt="...">
-            <div class="bg-dispo">
-                <div class="circle"></div>
-                <p class="p-dispo mt-3">Disponible</p>
-            </div>
-            <div class="bg-article">
-                <h1 class="t-article">Lorem ipsum dolor sit</h1>
-                <p class="p-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    exercitation ullamco laboris nisiut aliquip ex ea commodo.
-                </p>
-                <div class="row col-12 col-md-11">
-                    <div class="containt-info col-4">
-                        <img src="/assets/image/icone-group.png" class="icone-info" alt="...">
-                        <p class="p-info">Personnes :
-                        </p>
-                        <p class="p-details">2-6
-                        </p>
-                    </div>
-                    <div class="containt-info col-4">
-                        <img src="/assets/image/icone-clock.png" class="icone-info" alt="...">
-                        <p class="p-info">Durée :
-                        </p>
-                        <p class="p-details">6 jours.
-                        </p>
-                    </div>
-                    <div class="containt-info col-4">
-                        <img src="/assets/image/icone-price.png" class="icone-info" alt="...">
-                        <p class="p-info">A partir de :
-                        </p>
-                        <p class="p-details">599 €
-                        </p>
-                    </div>
-                </div>
-                <a href="{{ path('excursion_detail', {'id': 3}) }}" class="btn">En savoir plus</a>
-            </div>
-        </div>
+        {% endfor %}
     </section>
     <!-- C A R D S - C I R C U I T S -->
+
     <!-- A R T I C L E - C O N T A C T -->
     <section id="article-contact" class="row">
         <div class="bg-article order-2 order-md-1">
@@ -203,9 +130,11 @@
         <img src="/assets/image/picture-contact.jpg" class="picture-article order-1 order-md-2" alt="...">
     </section>
     <!-- A R T I C L E - C O N T A C T -->
+
     <!-- C O M M E N T - F O O T E R -->
     {% include '_partials/comments-footer.html.twig' with { 'commentaires': commentaires } %}
     <!-- C O M M E N T - F O O T E R -->
+
     <!-- P I C T U R E - F O O T E R -->
     <section id="picture-footer">
         <picture>
@@ -214,6 +143,7 @@
         </picture>
     </section>
     <!-- P I C T U R E - F O O T E R -->
+
     <!-- F O O T E R -->
     <footer id="footer">
         <a href="/mentions-legales" class="footer-link">Mentions légales</a>
@@ -221,4 +151,5 @@
         <img src="/assets/image/icone-insta-footer.png" class="icone-instagram" alt="Icône Instagram">
     </footer>
     <!-- F O O T E R -->
+    
 {% endblock %}

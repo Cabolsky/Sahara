@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+
     <!-- N A V B A R -->
     <section id="navbar">
         <div class="bg-navbar"></div>
@@ -39,56 +40,65 @@
         </nav>
     </section>
     <!-- N A V B A R -->
+    
     <!-- P I C T U R E - H E A D E R -->
     <section id="picture-header">
         <picture>
             <source srcset="/assets/image/picture-1-phone.jpg" media="(max-width: 768px)">
-            <img src="/assets/image/picture-header-excursion.jpg" class="picture" alt="...">
+            <img src="/assets/image/picture-header-contact.jpg" class="picture" alt="...">
         </picture>
         <div class="text-container">
             <div class="top-line">
-                <p class="p-header">Pour toutes questions</p>
+                <p class="p-header">Une question</p>
                 <img src="/assets/image/icone-logo.png" class="icone-logo" alt="..." style="width: 10%; height: auto;">
             </div>
             <h1 class="h-header">CONTACTEZ-NOUS</h1>
         </div>
     </section>
     <!-- P I C T U R E - H E A D E R -->
-        <!-- A R T I C L E - R I G H T -->
+
+    <!-- C O M M E N T - C O N T A C T -->
+    <section id="comments-contact" class="row">
+        <div class="bg-comment col-12 col-md-4">
+            <img src="/assets/image/icone-phone.png" class="icone-comment-1 ms-3" alt="Icône Instagram">            
+            <h1 class="t-comment">Par Téléphone :</h1>
+            <p class="p-comment col-8">Vous pouvez nous appeler du lundi au vendredi, de 9h à 17h, pour toute information. Notre équipe est à votre écoute et prête à répondre à vos questions. </p>
+            <h1 class="t-info">{{ contact.telephone }}</h1>
+        </div>
+        <div class="bg-comment col-12 col-md-4">
+            <img src="/assets/image/icone-mail.png" class="icone-comment-2 ms-3" alt="Icône Instagram">            
+            <h1 class="t-comment">Par e-mail :</h1>
+            <p class="p-comment col-8">Vous pouvez nous contacter par e-mail à tout moment, selon vos besoins. Nous vous répondrons dans les plus brefs délais avec plaisir. </p>
+            <h1 class="t-info">{{ contact.messagerie }}</h1>
+        </div>
+        <div class="bg-comment col-12 col-md-4">
+            <img src="/assets/image/icone-phone.png" class="icone-comment-3 ms-3" alt="Icône Instagram">            
+            <h1 class="t-comment">Par Téléphone Marocain :</h1>
+            <p class="p-comment col-8">Vous pouvez nous contacter par e-mail à tout moment, selon vos besoins. Nous vous répondrons dans les plus brefs délais avec plaisir.</p>
+            <h1 class="t-info">{{ contact.telephoneMarocain }}</h1>
+        </div>
+    </section>
+    <!-- C O M M E N T - C O N T A C T -->
+
+    <!-- A R T I C L E - R I G H T -->
     <section id="article-right" class="row">
         <div class="bg-article order-2 order-md-1 col-4">
             <h1 class="t-article">{{ article7.titre}}</h1>
             <p class="p-article col-10">{{ article7.description}}</p>
+            <h1 class="t-info">{{ contact.adresse }}</h1>
+            <h1 class="t-info">{{ contact.ville }}</h1>
+            <h1 class="t-info">{{ contact.pays }}</h1>
         </div>
        <img src="{{ asset('assets/image/' ~ article7.photo) }}" class="picture-article order-1 order-md-2 col-8" alt="...">
         <img src="/assets/image/icone-4x4.png" class="icone-comment order-3" alt="...">
         </div>
     </section>
     <!-- A R T I C L E - R I G H T -->
-    <!-- A R T I C L E - C O N T A C T -->
-    <section id="article-contact" class="row">
-        <div class="bg-article order-2 order-md-1">
-            <div class="contact-phone">
-                <img src="/assets/image/icone-phone.png" class="icone-info" alt="...">
-                <h1 class="t-article">Téléphone :</h1>
-                <p class="p-article">Vous pouvez nous appeler du lundi au vendredi, de 9h à 17h, pour toute information. Notre équipe est à votre écoute et prête à répondre à vos questions.
-                </p>
-                <p class="contact-info">{{ contact.telephone }}</p>
-            </div>
-            <div class="contact-mail">
-                <img src="/assets/image/icone-mail.png" class="icone-info" alt="...">
-                <h1 class="t-article">Adresse e-mail</h1>
-                <p class="p-article">Vous pouvez nous contacter par e-mail à tout moment, selon vos besoins. Nous vous répondrons dans les plus brefs délais avec plaisir.
-                </p>
-                <p class="contact-info">{{ contact.messagerie }}</p>
-            </div>
-        </div>
-        <img src="/assets/image/picture-contact.jpg" class="picture-article order-1 order-md-2" alt="...">
-    </section>
-    <!-- A R T I C L E - C O N T A C T -->
+
     <!-- C O M M E N T - F O O T E R -->
     {% include '_partials/comments-footer.html.twig' with { 'commentaires': commentaires } %}
     <!-- C O M M E N T - F O O T E R -->
+
     <!-- P I C T U R E - F O O T E R -->
     <section id="picture-footer">
         <picture>
@@ -97,6 +107,7 @@
         </picture>
     </section>
     <!-- P I C T U R E - F O O T E R -->
+
     <!-- F O O T E R -->
     <footer id="footer">
         <a href="/mentions-legales" class="footer-link">Mentions légales</a>
@@ -104,4 +115,5 @@
         <img src="/assets/image/icone-insta-footer.png" class="icone-instagram" alt="Icône Instagram">
     </footer>
     <!-- F O O T E R -->
+
 {% endblock %}

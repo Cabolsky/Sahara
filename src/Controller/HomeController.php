@@ -13,27 +13,21 @@ final class HomeController extends AbstractController
 {
     #[Route('/', name: 'app_home')]
     public function index(
-        ArticleRepository $articleRepository, 
+        ArticleRepository $articleRepository,
         CommentairesRepository $commentairesRepository,
         ContactRepository $contactRepository
     ): Response {
-
         $article1 = $articleRepository->find(1);
         $article2 = $articleRepository->find(2);
 
-        
-
         $commentaires = $commentairesRepository->findAll();
-
-
-        $contact = $contactRepository->findOneBy([]);
+        $contact      = $contactRepository->findOneBy([]);
 
         return $this->render('home/index.html.twig', [
-            'article1' => $article1, 
-            'article2' => $article2,
-
+            'article1'     => $article1,
+            'article2'     => $article2,
             'commentaires' => $commentaires,
-            'contact' => $contact,
+            'contact'      => $contact,
         ]);
     }
 }

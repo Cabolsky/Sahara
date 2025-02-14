@@ -2,12 +2,12 @@
 
 namespace App\Entity;
 
-use App\Repository\CircuitsRepository;
+use App\Repository\ExcursionsRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: CircuitsRepository::class)]
-class Circuits
+#[ORM\Entity(repositoryClass: ExcursionsRepository::class)]
+class Excursions
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -45,7 +45,7 @@ class Circuits
     private ?string $repas = null;
 
     #[ORM\Column(type: Types::DECIMAL, precision: 10, scale: 2)]
-    private ?float $prix = null;
+    private ?string $prix = null;
 
     #[ORM\Column(length: 255)]
     private ?string $photoJour1 = null;
@@ -56,38 +56,8 @@ class Circuits
     #[ORM\Column(type: Types::TEXT)]
     private ?string $texteJour1 = null;
 
-    #[ORM\Column(length: 255)]
-    private ?string $photoJour2 = null;
-
-    #[ORM\Column(length: 255)]
-    private ?string $titreJour2 = null;
-
-    #[ORM\Column(type: Types::TEXT)]
-    private ?string $texteJour2 = null;
-
-    #[ORM\Column(length: 255)]
-    private ?string $photoJour3 = null;
-
-    #[ORM\Column(length: 255)]
-    private ?string $titreJour3 = null;
-
-    #[ORM\Column(type: Types::TEXT)]
-    private ?string $texteJour3 = null;
-
-    #[ORM\Column(type: Types::BOOLEAN)]
-    private bool $disponible = true; 
-
-    public function getDisponible(): bool
-    {
-        return $this->disponible;
-    }
-
-    public function setDisponible(bool $disponible): self
-    {
-        $this->disponible = $disponible;
-
-        return $this;
-    }
+    #[ORM\Column]
+    private ?bool $disponible = null;
 
     public function getId(): ?int
     {
@@ -214,12 +184,12 @@ class Circuits
         return $this;
     }
 
-    public function getPrix(): ?float
+    public function getPrix(): ?string
     {
         return $this->prix;
     }
 
-    public function setPrix(float $prix): static
+    public function setPrix(string $prix): static
     {
         $this->prix = $prix;
 
@@ -262,74 +232,14 @@ class Circuits
         return $this;
     }
 
-    public function getPhotoJour2(): ?string
+    public function isDisponible(): ?bool
     {
-        return $this->photoJour2;
+        return $this->disponible;
     }
 
-    public function setPhotoJour2(string $photoJour2): static
+    public function setDisponible(bool $disponible): static
     {
-        $this->photoJour2 = $photoJour2;
-
-        return $this;
-    }
-
-    public function getTitreJour2(): ?string
-    {
-        return $this->titreJour2;
-    }
-
-    public function setTitreJour2(string $titreJour2): static
-    {
-        $this->titreJour2 = $titreJour2;
-
-        return $this;
-    }
-
-    public function getTexteJour2(): ?string
-    {
-        return $this->texteJour2;
-    }
-
-    public function setTexteJour2(string $texteJour2): static
-    {
-        $this->texteJour2 = $texteJour2;
-
-        return $this;
-    }
-
-    public function getPhotoJour3(): ?string
-    {
-        return $this->photoJour3;
-    }
-
-    public function setPhotoJour3(string $photoJour3): static
-    {
-        $this->photoJour3 = $photoJour3;
-
-        return $this;
-    }
-
-    public function getTitreJour3(): ?string
-    {
-        return $this->titreJour3;
-    }
-
-    public function setTitreJour3(string $titreJour3): static
-    {
-        $this->titreJour3 = $titreJour3;
-
-        return $this;
-    }
-
-    public function getTexteJour3(): ?string
-    {
-        return $this->texteJour3;
-    }
-
-    public function setTexteJour3(string $texteJour3): static
-    {
-        $this->texteJour3 = $texteJour3;
+        $this->disponible = $disponible;
 
         return $this;
     }

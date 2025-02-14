@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+
     <!-- N A V B A R -->
     <section id="navbar">
         <div class="bg-navbar"></div>
@@ -39,11 +40,12 @@
         </nav>
     </section>
     <!-- N A V B A R -->
+
     <!-- P I C T U R E - H E A D E R -->
     <section id="picture-header">
         <picture>
             <source srcset="/assets/image/picture-1-phone.jpg" media="(max-width: 768px)">
-            <img src="/assets/image/picture-header-index.jpg" class="picture" alt="...">
+            <img src="/assets/image/picture-header-quisommenous.jpg" class="picture" alt="...">
         </picture>
         <div class="text-container">
             <div class="top-line">
@@ -54,9 +56,11 @@
         </div>
     </section>
     <!-- P I C T U R E - H E A D E R -->
+
     <!-- C O M M E N T -->
     {% include '_partials/comments.html.twig' with { 'commentaires': commentaires } %}
     <!-- C O M M E N T -->
+
     <!-- A R T I C L E - R I G H T -->
     <section id="article-right" class="row">
         <div class="bg-article order-2 order-md-1 col-4">
@@ -68,16 +72,45 @@
         </div>
     </section>
     <!-- A R T I C L E - R I G H T -->
-    <!-- A R T I C L E - L E F T -->
-    <section id="article-left" class="row">
-     <img src="{{ asset('assets/image/' ~ article6.photo) }}" class="picture-article" alt="...">
-        <img src="/assets/image/icone-palmier.png" class="icone-comment" alt="...">
-        <div class="bg-article">
-            <h1 class="t-article">{{ article6.titre}}</h1>
-            <p class="p-article">{{ article6.description}}</p>
+
+    <!-- C A R D S - I N D E X -->
+    <section id="cards-contact" class="row">
+        <div class="cards col-12 col-md-4">
+            <img src="/assets/image/people-2.jpg" class="picture-cards" alt="...">
+            <div class="bg-article">
+                <h1 class="t-article">Lorem Ispu</h1>
+                <p class="p-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                    exercitation ullamco laboris nisiut aliquip ex ea commodo.
+                </p>
+            </div>
+        </div>
+        <div class="cards col-12 col-md-4">
+            <img src="/assets/image/people-1.jpg" class="picture-cards" alt="...">
+            <div class="bg-article">
+                <h1 class="t-article">Lorem Ispu</h1>
+                <p class="p-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                    exercitation ullamco laboris nisiut aliquip ex ea commodo.
+                </p>
+            </div>
+        </div>
+        <div class="cards col-12 col-md-4">
+            <img src="/assets/image/people-3.jpg" class="picture-cards" alt="...">
+            <div class="bg-article">
+                <h1 class="t-article">Lorem Ispu</h1>
+                <p class="p-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                    exercitation ullamco laboris nisiut aliquip ex ea commodo.
+                </p>
+            </div>
         </div>
     </section>
-    <!-- A R T I C L E - L E F T -->
+    <!-- C A R D S - I N D E X -->
+
     <!-- A R T I C L E - C O N T A C T -->
     <section id="article-contact" class="row">
         <div class="bg-article order-2 order-md-1">
@@ -99,9 +132,11 @@
         <img src="/assets/image/picture-contact.jpg" class="picture-article order-1 order-md-2" alt="...">
     </section>
     <!-- A R T I C L E - C O N T A C T -->
+
     <!-- C O M M E N T - F O O T E R -->
     {% include '_partials/comments-footer.html.twig' with { 'commentaires': commentaires } %}
     <!-- C O M M E N T - F O O T E R -->
+
     <!-- P I C T U R E - F O O T E R -->
     <section id="picture-footer">
         <picture>
@@ -110,6 +145,7 @@
         </picture>
     </section>
     <!-- P I C T U R E - F O O T E R -->
+
     <!-- F O O T E R -->
     <footer id="footer">
         <a href="/mentions-legales" class="footer-link">Mentions légales</a>
@@ -117,4 +153,5 @@
         <img src="/assets/image/icone-insta-footer.png" class="icone-instagram" alt="Icône Instagram">
     </footer>
     <!-- F O O T E R -->
+    
 {% endblock %}

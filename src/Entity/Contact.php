@@ -22,6 +22,15 @@ class Contact
     #[ORM\Column(length: 255)]
     private ?string $messagerie = null;
 
+    #[ORM\Column(length: 255)]
+    private ?string $telephoneMarocain = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $ville = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $pays = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -59,6 +68,42 @@ class Contact
     public function setMessagerie(string $messagerie): static
     {
         $this->messagerie = $messagerie;
+
+        return $this;
+    }
+
+    public function getTelephoneMarocain(): ?string
+    {
+        return $this->telephoneMarocain;
+    }
+
+    public function setTelephoneMarocain(string $telephoneMarocain): static
+    {
+        $this->telephoneMarocain = $telephoneMarocain;
+
+        return $this;
+    }
+
+    public function getVille(): ?string
+    {
+        return $this->ville;
+    }
+
+    public function setVille(string $ville): static
+    {
+        $this->ville = $ville;
+
+        return $this;
+    }
+
+    public function getPays(): ?string
+    {
+        return $this->pays;
+    }
+
+    public function setPays(string $pays): static
+    {
+        $this->pays = $pays;
 
         return $this;
     }
