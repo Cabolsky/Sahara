@@ -44,7 +44,7 @@ class Excursions
     #[ORM\Column(length: 255)]
     private ?string $repas = null;
 
-    #[ORM\Column(type: Types::DECIMAL, precision: 10, scale: 2)]
+    #[ORM\Column(type: Types::STRING, length: 255)]
     private ?string $prix = null;
 
     #[ORM\Column(length: 255)]

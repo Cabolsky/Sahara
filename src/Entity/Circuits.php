@@ -44,8 +44,8 @@ class Circuits
     #[ORM\Column(length: 255)]
     private ?string $repas = null;
 
-    #[ORM\Column(type: Types::DECIMAL, precision: 10, scale: 2)]
-    private ?float $prix = null;
+    #[ORM\Column(type: Types::STRING)]
+    private ?string $prix = null;
 
     #[ORM\Column(length: 255)]
     private ?string $photoJour1 = null;
@@ -214,12 +214,12 @@ class Circuits
         return $this;
     }
 
-    public function getPrix(): ?float
+    public function getPrix(): ?string
     {
         return $this->prix;
     }
 
-    public function setPrix(float $prix): static
+    public function setPrix(string $prix): static
     {
         $this->prix = $prix;
 

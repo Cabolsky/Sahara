@@ -4,6 +4,8 @@ namespace App\Entity;
 
 use App\Repository\ArticleRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity(repositoryClass: ArticleRepository::class)]
 class Article
@@ -19,8 +21,10 @@ class Article
     #[ORM\Column(length: 255)]
     private ?string $titre = null;
 
-    #[ORM\Column(type: "text")] // Changement ici : type "text" pour la colonne description
+    #[ORM\Column(type: "text")] 
     private ?string $description = null;
+
+    private ?File $photoFile = null;
 
     public function getId(): ?int
     {
@@ -61,5 +65,20 @@ class Article
         $this->description = $description;
 
         return $this;
+    }
+
+    // Méthode pour le champ photoFile
+    public function getPhotoFile(): ?File
+    {
+        return $this->photoFile;
+    }
+
+    public function setPhotoFile(?File $photoFile = null): void
+    {
+        $this->photoFile = $photoFile;
+
+        if ($photoFile) {
+            // Si un fichier est téléchargé, on peut mettre à jour une propriété updatedAt (si tu en as une)
+        }
     }
 }

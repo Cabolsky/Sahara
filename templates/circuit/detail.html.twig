@@ -53,7 +53,7 @@
         <div class="text-container">
             <div class="top-line">
                 <p class="p-header">Nôtre circuit privé</p>
-                <img src="/assets/image/icone-logo.png" class="icone-logo" alt="..." style="width: 10%; height: auto;">
+                <img src="/assets/image/icone-logo.png" class="icone-logo" alt="...">
             </div>
             <h1 class="h-header">{{ circuit.titreCards}}</h1> 
         </div>
@@ -169,11 +169,7 @@
     <!-- P I C T U R E - F O O T E R -->
 
     <!-- F O O T E R -->
-    <footer id="footer">
-        <a href="/mentions-legales" class="footer-link">Mentions légales</a>
-        <img src="/assets/image/icone-facebook-footer.png" class="icone-facebook" alt="Icône Facebook">
-        <img src="/assets/image/icone-insta-footer.png" class="icone-instagram" alt="Icône Instagram">
-    </footer>
+    {% include '_partials/footer.html.twig' %}
     <!-- F O O T E R -->
 
 {% endblock %}

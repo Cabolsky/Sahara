@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+
     {# <!-- N A V B A R -->
     <section id="navbar">
         <div class="bg-navbar"></div>
@@ -42,6 +43,7 @@
         </nav>
     </section>
     <!-- N A V B A R -->
+
     <!-- P I C T U R E - H E A D E R -->
     <section id="picture-header">
         <picture>
@@ -57,6 +59,7 @@
         </div>
     </section>
     <!-- P I C T U R E - H E A D E R -->
+
     <!-- I N F O -->
     <section id="article-info">
         <div class="row col-10 mx-auto mt-md-1">
@@ -112,6 +115,7 @@
         </div>
     </section>
     <!-- I N F O -->
+
     <!-- A R T I C L E - L E F T -->
     <section id="article-left" class="row">
         <img src="/assets/image/picture-3.jpg" class="picture-article" alt="...">
@@ -129,6 +133,7 @@
         </div>
     </section>
     <!-- A R T I C L E - L E F T -->
+
     <!-- A R T I C L E - R I G H T -->
     <section id="article-right" class="row">
         <div class="bg-article order-2 order-md-1 col-4">
@@ -147,6 +152,7 @@
         </div>
     </section>
     <!-- A R T I C L E - R I G H T -->
+
     <!-- A R T I C L E - L E F T -->
     <section id="article-left" class="row">
         <img src="/assets/image/picture-3.jpg" class="picture-article" alt="...">
@@ -164,6 +170,7 @@
         </div>
     </section>
     <!-- A R T I C L E - L E F T -->
+
     <!-- A R T I C L E - C O N T A C T -->
     <section id="article-contact" class="row">
         <div class="bg-article order-2 order-md-1">
@@ -191,6 +198,7 @@
         <img src="/assets/image/picture-contact.jpg" class="picture-article order-1 order-md-2" alt="...">
     </section>
     <!-- A R T I C L E - C O N T A C T -->
+
     <!-- C O M M E N T - F O O T E R -->
     <section id="comments-footer" class="row">
         {% for commentaire in commentaires %}
@@ -204,6 +212,7 @@
         {% endfor %}
     </section>
     <!-- C O M M E N T - F O O T E R -->
+
     <!-- P I C T U R E - F O O T E R -->
     <section id="picture-footer">
         <picture>
@@ -212,6 +221,7 @@
         </picture>
     </section>
     <!-- P I C T U R E - F O O T E R -->
+
     <!-- F O O T E R -->
     <footer id="footer">
         <a href="/mentions-legales" class="footer-link">Mentions légales</a>
@@ -219,4 +229,5 @@
         <img src="/assets/image/icone-insta-footer.png" class="icone-instagram" alt="Icône Instagram">
     </footer>
     <!-- F O O T E R --> #}
+    
 {% endblock %}

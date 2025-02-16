@@ -20,7 +20,7 @@ class Commentaires
     private ?string $description = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $icone = null;  // Champ pour l'icône
+    private ?string $icone = null;  
 
     public function getId(): ?int
     {
@@ -51,7 +51,6 @@ class Commentaires
         return $this;
     }
 
-    // Getter et setter pour l'icône
     public function getIcone(): ?string
     {
         return $this->icone;

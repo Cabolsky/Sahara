@@ -1,0 +1,6 @@
+easy_admin:
+    design:
+        brand_color: '#000000'  # La couleur de la barre de navigation, personnalise selon tes besoins
+    security:
+        access_control:
+            - { path: ^/admin, roles: ROLE_ADMIN }  # Permet l'accès à la partie admin seulement aux utilisateurs avec le rôle ROLE_ADMIN }
