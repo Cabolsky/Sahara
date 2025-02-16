@@ -13,7 +13,7 @@ class CircuitsFixtures extends Fixture
 
         $circuit1 = new Circuits();
         $circuit1->setPhotoCards('card-circuit-1.jpg')
-            ->setTitreCards('Circuits à travers le dessert Agadir')
+            ->setTitreCards('Circuits dessert Agadir')
             ->setTexteCards('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo.')
             ->setPhotoHeader('photo-header-circuit-1.jpg')
             ->setVilleDepart('Agadir')
@@ -25,19 +25,19 @@ class CircuitsFixtures extends Fixture
             ->setPrix('350.99')
             ->setPhotoJour1('photo-jour-1.jpg')
             ->setTitreJour1('Décription du jour 1')
-            ->setTexteJour1('Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+            ->setTexteJour1('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour2('photo-jour-2.jpg')
             ->setTitreJour2('Décription du jour 2')
-            ->setTexteJour2('Lorem ipsum dolor sit amet.')
+            ->setTexteJour2('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour3('photo-jour-3.jpg')
             ->setTitreJour3('Décription du jour 3')
-            ->setTexteJour3('Lorem ipsum dolor sit amet.')
+            ->setTexteJour3('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setDisponible(true);
         $manager->persist($circuit1);
 
         $circuit2 = new Circuits();
         $circuit2->setPhotoCards('card-circuit-2.jpg')
-            ->setTitreCards('Circuits à travers le désert de Marrakech')
+            ->setTitreCards('Circuits dessert Marrakech')
             ->setTexteCards('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo.')
             ->setPhotoHeader('photo-header-circuit-2.jpg')
             ->setVilleDepart('Marrakech')
@@ -49,13 +49,13 @@ class CircuitsFixtures extends Fixture
             ->setPrix('299.99')
             ->setPhotoJour1('photo-jour-1.jpg')
             ->setTitreJour1('Décription du jour 1')
-            ->setTexteJour1('Lorem ipsum dolor sit amet.')
+            ->setTexteJour1('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour2('photo-jour-2.jpg')
             ->setTitreJour2('Décription du jour 2')
-            ->setTexteJour2('Lorem ipsum dolor sit amet.')
+            ->setTexteJour2('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour3('photo-jour-3.jpg')
             ->setTitreJour3('Décription du jour 3')
-            ->setTexteJour3('Lorem ipsum dolor sit amet.')
+            ->setTexteJour3('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud..')
             ->setDisponible(true);
         $manager->persist($circuit2);
 
@@ -73,19 +73,19 @@ class CircuitsFixtures extends Fixture
             ->setPrix('599.99')
             ->setPhotoJour1('photo-jour-1.jpg')
             ->setTitreJour1('Décription du jour 1')
-            ->setTexteJour1('Lorem ipsum dolor sit amet.')
+            ->setTexteJour1('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour2('photo-jour-2.jpg')
             ->setTitreJour2('Décription du jour 2')
-            ->setTexteJour2('Lorem ipsum dolor sit amet.')
+            ->setTexteJour2('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour3('photo-jour-3.jpg')
             ->setTitreJour3('Décription du jour 3')
-            ->setTexteJour3('Lorem ipsum dolor sit amet.')
+            ->setTexteJour3('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setDisponible(true);
         $manager->persist($circuit3);
 
         $circuit4 = new Circuits();
         $circuit4->setPhotoCards('card-circuit-1.jpg')
-            ->setTitreCards('Circuits nature à Chefchaouen')
+            ->setTitreCards('Circuits dessert Chefchaouen')
             ->setTexteCards('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo.')
             ->setPhotoHeader('photo-header-circuit-1.jpg')
             ->setVilleDepart('Chefchaouen')
@@ -97,19 +97,19 @@ class CircuitsFixtures extends Fixture
             ->setPrix('420.00')
             ->setPhotoJour1('photo-jour-1.jpg')
             ->setTitreJour1('Décription du jour 1')
-            ->setTexteJour1('Lorem ipsum dolor sit amet.')
+            ->setTexteJour1('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour2('photo-jour-2.jpg')
             ->setTitreJour2('Décription du jour 2')
-            ->setTexteJour2('Lorem ipsum dolor sit amet.')
+            ->setTexteJour2('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour3('photo-jour-3.jpg')
             ->setTitreJour3('Décription du jour 3')
-            ->setTexteJour3('Lorem ipsum dolor sit amet.')
+            ->setTexteJour3('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setDisponible(true);
         $manager->persist($circuit4);
 
         $circuit5 = new Circuits();
         $circuit5->setPhotoCards('card-circuit-2.jpg')
-            ->setTitreCards('Circuits en montagne à Atlas')
+            ->setTitreCards('Circuits dessert Atlas')
             ->setTexteCards('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo.')
             ->setPhotoHeader('photo-header-circuit-2.jpg')
             ->setVilleDepart('Marrakech')
@@ -121,19 +121,19 @@ class CircuitsFixtures extends Fixture
             ->setPrix('499.99')
             ->setPhotoJour1('photo-jour-1.jpg')
             ->setTitreJour1('Décription du jour 1')
-            ->setTexteJour1('Lorem ipsum dolor sit amet.')
+            ->setTexteJour1('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour2('photo-jour-2.jpg')
             ->setTitreJour2('Décription du jour 2')
-            ->setTexteJour2('Lorem ipsum dolor sit amet.')
+            ->setTexteJour2('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour3('photo-jour-3.jpg')
             ->setTitreJour3('Décription du jour 3')
-            ->setTexteJour3('Lorem ipsum dolor sit amet.')
+            ->setTexteJour3('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setDisponible(true);
         $manager->persist($circuit5);
 
         $circuit6 = new Circuits();
         $circuit6->setPhotoCards('card-circuit-3.jpg')
-            ->setTitreCards('Circuits à travers le Rif')
+            ->setTitreCards('Circuits dessert le Rif')
             ->setTexteCards('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo.')
             ->setPhotoHeader('photo-header-circuit-3.jpg')
             ->setVilleDepart('Tetouan')
@@ -145,19 +145,19 @@ class CircuitsFixtures extends Fixture
             ->setPrix('320.50')
             ->setPhotoJour1('photo-jour-1.jpg')
             ->setTitreJour1('Décription du jour 1')
-            ->setTexteJour1('Lorem ipsum dolor sit amet.')
+            ->setTexteJour1('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour2('photo-jour-2.jpg')
             ->setTitreJour2('Décription du jour 2')
-            ->setTexteJour2('Lorem ipsum dolor sit amet.')
+            ->setTexteJour2('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour3('photo-jour-3.jpg')
             ->setTitreJour3('Décription du jour 3')
-            ->setTexteJour3('Lorem ipsum dolor sit amet.')
+            ->setTexteJour3('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setDisponible(true);
         $manager->persist($circuit6);
 
         $circuit7 = new Circuits();
         $circuit7->setPhotoCards('card-circuit-1.jpg')
-            ->setTitreCards('Circuits à travers les gorges de Todra')
+            ->setTitreCards('Circuits dessert de Todra')
             ->setTexteCards('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo.')
             ->setPhotoHeader('photo-header-circuit-1.jpg')
             ->setVilleDepart('Rissani')
@@ -169,19 +169,19 @@ class CircuitsFixtures extends Fixture
             ->setPrix('280.75')
             ->setPhotoJour1('photo-jour-1.jpg')
             ->setTitreJour1('Décription du jour 1')
-            ->setTexteJour1('Lorem ipsum dolor sit amet.')
+            ->setTexteJour1('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour2('photo-jour-2.jpg')
             ->setTitreJour2('Décription du jour 2')
-            ->setTexteJour2('Lorem ipsum dolor sit amet.')
+            ->setTexteJour2('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour3('photo-jour-3.jpg')
             ->setTitreJour3('Décription du jour 3')
-            ->setTexteJour3('Lorem ipsum dolor sit amet.')
+            ->setTexteJour3('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setDisponible(true);
         $manager->persist($circuit7);
 
         $circuit8 = new Circuits();
         $circuit8->setPhotoCards('card-circuit-2.jpg')
-            ->setTitreCards('Circuits de randonnée dans le Haut Atlas')
+            ->setTitreCards('Circuits dessert Haut Atlas')
             ->setTexteCards('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo.')
             ->setPhotoHeader('photo-header-circuit-2.jpg')
             ->setVilleDepart('Marrakech')
@@ -193,19 +193,19 @@ class CircuitsFixtures extends Fixture
             ->setPrix('650.99')
             ->setPhotoJour1('photo-jour-1.jpg')
             ->setTitreJour1('Décription du jour 1')
-            ->setTexteJour1('Lorem ipsum dolor sit amet.')
+            ->setTexteJour1('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour2('photo-jour-2.jpg')
             ->setTitreJour2('Décription du jour 2')
-            ->setTexteJour2('Lorem ipsum dolor sit amet.')
+            ->setTexteJour2('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour3('photo-jour-3.jpg')
             ->setTitreJour3('Décription du jour 3')
-            ->setTexteJour3('Lorem ipsum dolor sit amet.')
+            ->setTexteJour3('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setDisponible(true);
         $manager->persist($circuit8);
 
         $circuit9 = new Circuits();
         $circuit9->setPhotoCards('card-circuit-3.jpg')
-            ->setTitreCards('Circuits de découverte de l\'Oasis de Figuig')
+            ->setTitreCards('Circuits dessert de Figuig')
             ->setTexteCards('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo.')
             ->setPhotoHeader('photo-header-circuit-3.jpg')
             ->setVilleDepart('Figuig')
@@ -217,19 +217,19 @@ class CircuitsFixtures extends Fixture
             ->setPrix('540.60')
             ->setPhotoJour1('photo-jour-1.jpg')
             ->setTitreJour1('Décription du jour 1')
-            ->setTexteJour1('Lorem ipsum dolor sit amet.')
+            ->setTexteJour1('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour2('photo-jour-2.jpg')
             ->setTitreJour2('Décription du jour 2')
-            ->setTexteJour2('Lorem ipsum dolor sit amet.')
+            ->setTexteJour2('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour3('photo-jour-3.jpg')
             ->setTitreJour3('Décription du jour 3')
-            ->setTexteJour3('Lorem ipsum dolor sit amet.')
+            ->setTexteJour3('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setDisponible(true);
         $manager->persist($circuit9);
 
         $circuit10 = new Circuits();
         $circuit10->setPhotoCards('card-circuit-1.jpg')
-            ->setTitreCards('Circuits à travers le désert de Merzouga')
+            ->setTitreCards('Circuits dessert Merzouga')
             ->setTexteCards('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo.')
             ->setPhotoHeader('photo-header-circuit-1.jpg')
             ->setVilleDepart('Merzouga')
@@ -241,19 +241,19 @@ class CircuitsFixtures extends Fixture
             ->setPrix('450.00')
             ->setPhotoJour1('photo-jour-1.jpg')
             ->setTitreJour1('Décription du jour 1')
-            ->setTexteJour1('Lorem ipsum dolor sit amet.')
+            ->setTexteJour1('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour2('photo-jour-2.jpg')
             ->setTitreJour2('Décription du jour 2')
-            ->setTexteJour2('Lorem ipsum dolor sit amet.')
+            ->setTexteJour2('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour3('photo-jour-3.jpg')
             ->setTitreJour3('Décription du jour 3')
-            ->setTexteJour3('Lorem ipsum dolor sit amet.')
+            ->setTexteJour3('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setDisponible(true);
         $manager->persist($circuit10);
 
         $circuit11 = new Circuits();
         $circuit11->setPhotoCards('card-circuit-2.jpg')
-            ->setTitreCards('Circuits gastronomiques à Marrakech')
+            ->setTitreCards('Circuits dessert Marrakech')
             ->setTexteCards('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo.')
             ->setPhotoHeader('photo-header-circuit-2.jpg')
             ->setVilleDepart('Marrakech')
@@ -265,20 +265,20 @@ class CircuitsFixtures extends Fixture
             ->setPrix('599.00')
             ->setPhotoJour1('photo-jour-1.jpg')
             ->setTitreJour1('Décription du jour 1')
-            ->setTexteJour1('Lorem ipsum dolor sit amet.')
+            ->setTexteJour1('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour2('photo-jour-2.jpg')
             ->setTitreJour2('Décription du jour 2')
-            ->setTexteJour2('Lorem ipsum dolor sit amet.')
+            ->setTexteJour2('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour3('photo-jour-3.jpg')
             ->setTitreJour3('Décription du jour 3')
-            ->setTexteJour3('Lorem ipsum dolor sit amet.')
+            ->setTexteJour3('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setDisponible(true);
         $manager->persist($circuit11);
 
         // Circuit 12
         $circuit12 = new Circuits();
         $circuit12->setPhotoCards('card-circuit-3.jpg')
-            ->setTitreCards('Circuits en camping sauvage dans le désert')
+            ->setTitreCards('Circuits dessert sauvage')
             ->setTexteCards('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo.')
             ->setPhotoHeader('photo-header-circuit-3.jpg')
             ->setVilleDepart('Marrakech')
@@ -290,19 +290,19 @@ class CircuitsFixtures extends Fixture
             ->setPrix('450.99')
             ->setPhotoJour1('photo-jour-1.jpg')
             ->setTitreJour1('Décription du jour 1')
-            ->setTexteJour1('Lorem ipsum dolor sit amet.')
+            ->setTexteJour1('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour2('photo-jour-2.jpg')
             ->setTitreJour2('Décription du jour 2')
-            ->setTexteJour2('Lorem ipsum dolor sit amet.')
+            ->setTexteJour2('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour3('photo-jour-3.jpg')
             ->setTitreJour3('Décription du jour 3')
-            ->setTexteJour3('Lorem ipsum dolor sit amet.')
+            ->setTexteJour3('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setDisponible(true);
         $manager->persist($circuit12);
 
         $circuit13 = new Circuits();
         $circuit13->setPhotoCards('card-circuit-1.jpg')
-            ->setTitreCards('Circuits au cœur des montagnes du Rif')
+            ->setTitreCards('Circuits dessert du Rif')
             ->setTexteCards('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo.')
             ->setPhotoHeader('photo-header-circuit-1.jpg')
             ->setVilleDepart('Chefchaouen')
@@ -314,19 +314,19 @@ class CircuitsFixtures extends Fixture
             ->setPrix('550.00')
             ->setPhotoJour1('photo-jour-1.jpg')
             ->setTitreJour1('Décription du jour 1')
-            ->setTexteJour1('Lorem ipsum dolor sit amet.')
+            ->setTexteJour1('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour2('photo-jour-2.jpg')
             ->setTitreJour2('Décription du jour 2')
-            ->setTexteJour2('Lorem ipsum dolor sit amet.')
+            ->setTexteJour2('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour3('photo-jour-3.jpg')
             ->setTitreJour3('Décription du jour 3')
-            ->setTexteJour3('Lorem ipsum dolor sit amet.')
+            ->setTexteJour3('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setDisponible(true);
         $manager->persist($circuit13);
 
         $circuit14 = new Circuits();
         $circuit14->setPhotoCards('card-circuit-2.jpg')
-            ->setTitreCards('Circuits de découverte de l\'Atlas')
+            ->setTitreCards('Circuits dessert Atlas')
             ->setTexteCards('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo.')
             ->setPhotoHeader('photo-header-circuit-2.jpg')
             ->setVilleDepart('Marrakech')
@@ -338,13 +338,13 @@ class CircuitsFixtures extends Fixture
             ->setPrix('400.00')
             ->setPhotoJour1('photo-jour-1.jpg')
             ->setTitreJour1('Décription du jour 1')
-            ->setTexteJour1('Lorem ipsum dolor sit amet.')
+            ->setTexteJour1('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour2('photo-jour-2.jpg')
             ->setTitreJour2('Décription du jour 2')
-            ->setTexteJour2('Lorem ipsum dolor sit amet.')
+            ->setTexteJour2('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour3('photo-jour-3.jpg')
             ->setTitreJour3('Décription du jour 3')
-            ->setTexteJour3('Lorem ipsum dolor sit amet.')
+            ->setTexteJour3('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setDisponible(false);
         $manager->persist($circuit14);
 
@@ -362,13 +362,13 @@ class CircuitsFixtures extends Fixture
             ->setPrix('300.50')
             ->setPhotoJour1('photo-jour-1.jpg')
             ->setTitreJour1('Décription du jour 1')
-            ->setTexteJour1('Lorem ipsum dolor sit amet.')
+            ->setTexteJour1('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour2('photo-jour-2.jpg')
             ->setTitreJour2('Décription du jour 2')
-            ->setTexteJour2('Lorem ipsum dolor sit amet.')
+            ->setTexteJour2('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setPhotoJour3('photo-jour-3.jpg')
             ->setTitreJour3('Décription du jour 3')
-            ->setTexteJour3('Lorem ipsum dolor sit amet.')
+            ->setTexteJour3('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
             ->setDisponible(false);
         $manager->persist($circuit15);
 
