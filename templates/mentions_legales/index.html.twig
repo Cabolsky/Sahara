@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <!-- N A V B A R -->
+    <section id="navbar">
+        <div class="bg-navbar"></div>
+            <a href="{{ path('app_home') }}">
+                <img src="/assets/image/logo-sahara.png" class="logo" alt="Logo Sahara">
+            </a>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars" style="color: white; font-size: 1.5rem;"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_circuit') }}">Nos circuits privés</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_excursion') }}">Nos excursions privées</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_qui_sommes_nous') }}">Qui sommes-nous ?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_contact') }}">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <img src="/assets/image/icone-facebook.png" class="icone-facebook ms-3" alt="Icône Facebook">
+                        <img src="/assets/image/icone-insta.png" class="icone-instagram ms-3" alt="Icône Instagram">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- N A V B A R -->
+
+    <!-- M E N T I O N S -->
+    <section id="mentions">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                    <h1 class="t-article">Propriété intellectuelle</h1>
+                    <p class="p-article">L’ensemble des éléments présents sur le site Escapade Sahara (textes, images, graphismes, logo, etc.) sont protégés par le droit d’auteur et la propriété intellectuelle. Toute reproduction ou utilisation sans autorisation est interdite.</p>
+
+                    <h1 class="t-article">Responsabilité</h1>
+                    <p class="p-article">Le site Escapade Sahara propose des circuits et excursions au Maroc. Les informations fournies (descriptions, itinéraires, tarifs, disponibilités) sont données à titre indicatif et peuvent être modifiées sans préavis. L’éditeur du site ne saurait être tenu responsable en cas d’inexactitude ou d’évolution des offres.</p>
+
+                    <h1 class="t-article">Données personnelles</h1>
+                    <p class="p-article">Les informations de contact présentes sur le site sont destinées à informer les visiteurs sur les services proposés. Le site Escapade Sahara ne collecte ni ne stocke de données personnelles via des formulaires en ligne.</p>
+
+                    <h1 class="t-article">Cookies</h1>
+                    <p class="p-article">Le site Escapade Sahara peut utiliser des cookies afin d’améliorer l’expérience utilisateur et d’effectuer des statistiques de visite. Un cookie est un petit fichier stocké sur votre appareil lors de votre navigation. Vous pouvez configurer votre navigateur pour refuser les cookies ou être alerté lorsqu’un cookie est envoyé.</p>
+
+                    <h1 class="t-article">Droit applicable</h1>
+                    <p class="p-article">Les présentes mentions légales sont régies par le droit marocain. En cas de litige, les tribunaux marocains seront seuls compétents.</p>
+                    <h1 class="t-article">Hébergement du site</h1>
+                    <p class="p-article">Hébergeur : PlanetHoster</p>
+                    <p class="p-article">Adresse : 4416 Louis-B.-Mayer, Laval, Québec, Canada, H7P 0G1</p>
+                    <p class="p-article">Téléphone : +33 1 76 60 41 43</p>
+                    <p class="p-article">Site web : <a href="https://www.planethoster.com/" target="_blank">https://www.planethoster.com/</a></p>           
+                </div>
+            </div>
+        </div>
+        <img src="/assets/image/picture-luxe.jpg" class="picture" alt="...">
+    </section>
+    <!-- M E N T I O N S -->
+
+{% endblock %}

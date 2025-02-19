@@ -9,7 +9,7 @@ security:
         app_user_provider:
             entity:
                 class: App\Entity\Admin  # Remplacez par le nom de votre entité Admin
-                property: email  # Identifiant unique (email ici)
+                property: username    # Identifiant unique (email ici)
 
     firewalls:
         # Sécurisation de l'accès au /admin
