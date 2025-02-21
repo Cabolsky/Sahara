@@ -42,6 +42,7 @@ class CircuitController extends AbstractController
             'commentaires' => $commentaires,
             'contact' => $contact,
             'article3' => $article3,
+            'title' => 'Circuits - Escapade Sahara',
         ]);
     }
 
@@ -59,10 +60,11 @@ class CircuitController extends AbstractController
         $article3 = $this->articleRepository->find(3);
 
         return $this->render('circuit/detail.html.twig', [
-            'circuit' => $circuit,
+            'circuit'      => $circuit,
             'commentaires' => $commentaires,
-            'contact' => $contact,
-            'article3' => $article3,
+            'contact'      => $contact,
+            'article3'     => $article3,
+            'title'        => 'Circuits - Escapade Sahara',
         ]);
     }
 }

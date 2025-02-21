@@ -1,5 +1,5 @@
 {% extends 'base.html.twig' %}
-
+{% block title %}{{ title }}{% endblock %}
 {% block body %}
 
     <!-- N A V B A R -->
@@ -109,7 +109,7 @@
                 <img src="/assets/image/icone-price.png" class="icone-info" alt="...">
                 <p class="p-info">A partir :
                 </p>
-                <p class="p-details">{{ excursion.prix }} €
+                <p class="p-details">{{ excursion.prix }} €/pers.
                 </p>
             </div>
         </div>

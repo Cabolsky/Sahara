@@ -24,6 +24,7 @@ final class HomeController extends AbstractController
         $contact      = $contactRepository->findOneBy([]);
 
         return $this->render('home/index.html.twig', [
+            'title'        => 'Accueil - Escapade Sahara',
             'article1'     => $article1,
             'article2'     => $article2,
             'commentaires' => $commentaires,

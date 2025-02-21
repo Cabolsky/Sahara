@@ -39,6 +39,7 @@ final class QuiSommesNousController extends AbstractController
             'contact'         => $contact,
             'article5'        => $article5,
             'article6'        => $article6,
+            'title'           => 'Qui somme nous - Escapade Sahara',
         ]);
     }
 }

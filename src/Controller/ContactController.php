@@ -37,6 +37,7 @@ final class ContactController extends AbstractController
             'commentaires'    => $commentaires,
             'contact'         => $contact,
             'article7'        => $article7,
+            'title'           => 'Contact - Escapade Sahara',
         ]);
     }
 }

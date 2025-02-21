@@ -42,6 +42,7 @@ class ExcursionController extends AbstractController
             'commentaires' => $commentaires,
             'contact'      => $contact,
             'article4'     => $article4,
+            'title'        => 'Excursions - Escapade Sahara',
         ]);
     }
 
@@ -63,6 +64,7 @@ class ExcursionController extends AbstractController
             'commentaires' => $commentaires,
             'contact'      => $contact,
             'article4'     => $article4,
+            'title'        => 'Excursions - Escapade Sahara',
         ]);
     }
 }

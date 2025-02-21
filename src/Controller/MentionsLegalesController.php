@@ -13,6 +13,7 @@ final class MentionsLegalesController extends AbstractController
     {
         return $this->render('mentions_legales/index.html.twig', [
             'controller_name' => 'MentionsLegalesController',
+            'title'           => 'Mentions Légales - Escapade Sahara',
         ]);
     }
 }

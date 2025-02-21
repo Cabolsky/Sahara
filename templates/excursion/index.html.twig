@@ -1,5 +1,6 @@
-{% extends 'base.html.twig' %}
 
+{% extends 'base.html.twig' %}
+{% block title %}{{ title }}{% endblock %}
 {% block body %}
 
     <!-- N A V B A R -->
@@ -55,7 +56,7 @@
                 <p class="p-header">Découvrez nos</p>
                 <img src="/assets/image/icone-logo.png" class="icone-logo" alt="...">
             </div>
-            <h1 class="h-header">EXCURSION PRIVÉES.</h1>
+            <h1 class="h-header">EXCURSIONS PRIVÉES.</h1>
         </div>
     </section>
     <!-- P I C T U R E - H E A D E R -->
@@ -102,7 +103,7 @@
                         <div class="containt-info col-4">
                             <img src="/assets/image/icone-price.png" class="icone-info" alt="...">
                             <p class="p-info">A partir de :</p>
-                            <p class="p-details">{{ excursion.prix}} €</p>
+                            <p class="p-details">{{ excursion.prix}} €/pers.</p>
                         </div>
                     </div>
                     <a href="{{ path('excursion_detail', {'id':excursion.id}) }}" class="btn">En savoir plus</a>

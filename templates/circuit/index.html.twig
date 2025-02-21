@@ -1,5 +1,5 @@
 {% extends 'base.html.twig' %}
-
+{% block title %}{{ title }}{% endblock %}
 {% block body %}
 
     <!-- N A V B A R -->
@@ -102,7 +102,7 @@
                         <div class="containt-info col-4">
                             <img src="/assets/image/icone-price.png" class="icone-info" alt="...">
                             <p class="p-info">A partir de :</p>
-                            <p class="p-details">{{ circuit.prix}} €</p>
+                            <p class="p-details">{{ circuit.prix}} €/pers.</p>
                         </div>
                     </div>
                     <a href="{{ path('circuit_detail', {'id': circuit.id}) }}" class="btn">En savoir plus</a>
