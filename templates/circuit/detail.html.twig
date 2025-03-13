@@ -47,7 +47,7 @@
     <!-- P I C T U R E - H E A D E R -->
     <section id="picture-header">
         <picture>
-            <source srcset="/assets/image/picture-1-phone.jpg" media="(max-width: 768px)">
+            <source srcset="{{ asset('assets/image/' ~ circuit.photoHeader) }}" media="(max-width: 768px)">
             <img src="{{ asset('assets/image/' ~ circuit.photoHeader) }}" class="picture" alt="...">
         </picture>
         <div class="text-container">
@@ -96,7 +96,7 @@
             <div class="containt-info">
                 <img src="/assets/image/icone-price.png" class="icone-info" alt="...">
                 <p class="p-info">A partir :</p>
-                <p class="p-details">{{ circuit.prix }} €/pers.</p> 
+                <p class="p-details mt-md-0 mt-5">{{ circuit.prix }} €/pers.</p> 
             </div>
         </div>
     </section>
