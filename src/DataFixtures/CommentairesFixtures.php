@@ -11,20 +11,20 @@ class CommentairesFixtures extends Fixture
     public function load(ObjectManager $manager): void
     {
         $commentaire1 = new Commentaires();
-        $commentaire1->setTitre('Lorem ipsum dolor sit amet1');
-        $commentaire1->setDescription('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. ');
+        $commentaire1->setTitre('Découvrez un Maroc authentique');
+        $commentaire1->setDescription('Plongez au cœur du Maroc authentique à travers des paysages grandioses et des rencontres inoubliables. Découvrez des villages berbères, des oasis secrètes et des dunes infinies pour une immersion unique.');
         $commentaire1->setIcone('/assets/image/icone-palmier.png'); 
         $manager->persist($commentaire1);
 
         $commentaire2 = new Commentaires();
-        $commentaire2->setTitre('Lorem ipsum dolor sit amet2');
-        $commentaire2->setDescription('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. ');
+        $commentaire2->setTitre('Des aventures pour toute la famille');
+        $commentaire2->setDescription('Offrez à votre famille des souvenirs inoubliables avec des activités adaptées à tous les âges. Balade en dromadaire au coucher du soleil, nuits étoilées sous une tente berbère, ou exploration des kasbahs historiques.');
         $commentaire2->setIcone('/assets/image/icone-camel.png'); 
         $manager->persist($commentaire2);
 
         $commentaire3 = new Commentaires();
-        $commentaire3->setTitre('Lorem ipsum dolor sit amet3');
-        $commentaire3->setDescription('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. ');
+        $commentaire3->setTitre('Nos circuit privé en 4x4');
+        $commentaire3->setDescription('Partez à l’aventure en toute liberté avec nos circuits privés en 4x4 à travers le sud du Maroc. Accompagné d’un guide local expérimenté, traversez des paysages variés entre montagnes, vallées verdoyantes et dunes dorées.');
         $commentaire3->setIcone('/assets/image/icone-4x4.png'); 
         $manager->persist($commentaire3);
 
