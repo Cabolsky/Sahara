@@ -5,8 +5,11 @@ namespace App\Entity;
 use App\Repository\ExcursionsRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\HttpFoundation\File\File;
 
 #[ORM\Entity(repositoryClass: ExcursionsRepository::class)]
+#[Vich\Uploadable]
 class Excursions
 {
     #[ORM\Id]
@@ -58,6 +61,10 @@ class Excursions
 
     #[ORM\Column]
     private ?bool $disponible = null;
+
+    // Ajout du champ pour gérer le fichier d'image
+    #[Vich\UploadableField(mapping: 'upload_files', fileNameProperty: 'photoCards')]
+    private ?File $photoCardsFile = null;
 
     public function getId(): ?int
     {
@@ -242,5 +249,21 @@ class Excursions
         $this->disponible = $disponible;
 
         return $this;
+    }
+
+    // Getter et setter pour le fichier d'image
+    public function getPhotoCardsFile(): ?File
+    {
+        return $this->photoCardsFile;
+    }
+
+    public function setPhotoCardsFile(?File $photoCardsFile = null): void
+    {
+        $this->photoCardsFile = $photoCardsFile;
+
+        if ($photoCardsFile) {
+            // Si un fichier est téléchargé, mettre à jour la date de modification si nécessaire
+            // Par exemple, ajouter une propriété `updatedAt`
+        }
     }
 }

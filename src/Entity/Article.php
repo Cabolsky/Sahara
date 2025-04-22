@@ -6,8 +6,10 @@ use App\Repository\ArticleRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
 use Symfony\Component\Validator\Constraints as Assert;
+use Vich\UploaderBundle\Mapping\Annotation as Vich; // Ajout de l'import de VichUploader
 
 #[ORM\Entity(repositoryClass: ArticleRepository::class)]
+#[Vich\Uploadable] // Ajout de l'annotation @Vich\Uploadable
 class Article
 {
     #[ORM\Id]
@@ -24,6 +26,10 @@ class Article
     #[ORM\Column(type: "text")] 
     private ?string $description = null;
 
+    /**
+     * @Vich\UploadableField(mapping="general_file", fileNameProperty="photo") // Ajout de l'annotation pour gérer l'upload
+     * @var File|null
+     */
     private ?File $photoFile = null;
 
     public function getId(): ?int

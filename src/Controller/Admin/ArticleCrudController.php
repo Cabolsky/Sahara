@@ -23,10 +23,11 @@ class ArticleCrudController extends AbstractCrudController
             TextField::new('titre'), 
             TextField::new('description'), 
             ImageField::new('photo') 
-                ->setBasePath('/assets/image')
-                ->setUploadDir('public/assets/image') 
+                ->setBasePath('/uploads')  // Remplacez /assets/image par /uploads
+                ->setUploadDir('public/uploads') // Remplacez public/assets/image par public/uploads
                 ->setRequired(false) 
                 ->setHelp('Dimensions : 1100px x 600px')
+                ->setFormTypeOptions(['allow_file_upload' => true]) // Ajout de l'option pour le fichier
         ];
     }
 }

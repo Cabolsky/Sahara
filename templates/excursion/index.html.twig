@@ -7,7 +7,7 @@
     <section id="navbar">
         <div class="bg-navbar"></div>
         <a href="{{ path('app_home') }}">
-            <img src="/assets/image/logo-sahara.png" class="logo" alt="Logo Sahara">
+            <img src="/uploads/logo-sahara.png" class="logo" alt="Logo Sahara">
         </a>
         <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
@@ -36,8 +36,8 @@
                         </li>
                     </ul>
                     <div class="d-flex align-items-center">
-                        <img src="/assets/image/icone-facebook.png" class="icone-facebook ms-3" alt="Icône Facebook">
-                        <img src="/assets/image/icone-insta.png" class="icone-instagram ms-3" alt="Icône Instagram">
+                        <img src="/uploads/icone-facebook.png" class="icone-facebook ms-3" alt="Icône Facebook">
+                        <img src="/uploads/icone-insta.png" class="icone-instagram ms-3" alt="Icône Instagram">
                     </div>
                 </div>
             </div>
@@ -48,13 +48,13 @@
     <!-- P I C T U R E - H E A D E R -->
     <section id="picture-header">
         <picture>
-            <source srcset="/assets/image/picture-1-phone.jpg" media="(max-width: 768px)">
-            <img src="/assets/image/picture-header-excursion.jpg" class="picture" alt="...">
+            <source srcset="/uploads/picture-1-phone.jpg" media="(max-width: 768px)">
+            <img src="/uploads/picture-header-excursion.jpg" class="picture" alt="...">
         </picture>
         <div class="text-container">
             <div class="top-line">
                 <p class="p-header">Découvrez nos</p>
-                <img src="/assets/image/icone-logo.png" class="icone-logo" alt="...">
+                <img src="/uploads/icone-logo.png" class="icone-logo" alt="...">
             </div>
             <h1 class="h-header">EXCURSIONS PRIVÉES.</h1>
         </div>
@@ -67,8 +67,8 @@
 
     <!-- A R T I C L E - L E F T -->
     <section id="article-left" class="row">
-        <img src="{{ asset('assets/image/' ~ article4.photo) }}" class="picture-article" alt="...">
-        <img src="/assets/image/icone-palmier.png" class="icone-comment" alt="...">
+        <img src="{{ asset('uploads/' ~ article4.photo) }}" class="picture-article" alt="...">
+        <img src="/uploads/icone-palmier.png" class="icone-comment" alt="...">
         <div class="bg-article">
             <h1 class="t-article">{{ article4.titre }}</h1>
             <p class="p-article">{{ article4.description }}</p>
@@ -82,26 +82,26 @@
             <div class="cards col-12 col-md-4 {% if not excursion.disponible %} unavailable {% endif %}">
                 {% if not excursion.disponible %}
                     <div class="soon-icon">
-                        <img src="/assets/image/icone-soon.png" class="icone-soon" alt="Bientôt disponible">
+                        <img src="/uploads/icone-soon.png" class="icone-soon" alt="Bientôt disponible">
                     </div>
                 {% endif %}
-                <img src="{{ asset('assets/image/' ~ excursion.photoCards) }}" class="picture-cards" alt="...">
+                <img src="{{ asset('uploads/' ~ excursion.photoCards) }}" class="picture-cards" alt="...">
                 <div class="bg-article">
                     <h1 class="t-article">{{ excursion.titreCards}}</h1>
                     <p class="p-article">{{ excursion.texteCards}}</p>
                     <div class="row col-12 col-md-11">
                         <div class="containt-info col-4">
-                            <img src="/assets/image/icone-group.png" class="icone-info" alt="...">
+                            <img src="/uploads/icone-group.png" class="icone-info" alt="...">
                             <p class="p-info">Personnes :</p>
                             <p class="p-details">{{ excursion.nombrePersonnes}}</p>
                         </div>
                         <div class="containt-info col-4">
-                            <img src="/assets/image/icone-clock.png" class="icone-info" alt="...">
+                            <img src="/uploads/icone-clock.png" class="icone-info" alt="...">
                             <p class="p-info">Durée :</p>
                             <p class="p-details">{{ excursion.duree}}</p>
                         </div>
                         <div class="containt-info col-4">
-                            <img src="/assets/image/icone-price.png" class="icone-info" alt="...">
+                            <img src="/uploads/icone-price.png" class="icone-info" alt="...">
                             <p class="p-info">A partir de :</p>
                             <p class="p-details">{{ excursion.prix}} €/pers.</p>
                         </div>
@@ -117,21 +117,21 @@
     <section id="article-contact" class="row">
         <div class="bg-article order-2 order-md-1">
             <div class="contact-phone">
-                <img src="/assets/image/icone-phone.png" class="icone-info" alt="...">
+                <img src="/uploads/icone-phone.png" class="icone-info" alt="...">
                 <h1 class="t-article">Téléphone :</h1>
                 <p class="p-article">Vous pouvez nous appeler du lundi au vendredi, de 9h à 17h, pour toute information. Notre équipe est à votre écoute et prête à répondre à vos questions.
                 </p>
                 <p class="contact-info">{{ contact.telephone }}</p>
             </div>
             <div class="contact-mail">
-                <img src="/assets/image/icone-mail.png" class="icone-info" alt="...">
+                <img src="/uploads/icone-mail.png" class="icone-info" alt="...">
                 <h1 class="t-article">Adresse e-mail</h1>
                 <p class="p-article">Vous pouvez nous contacter par e-mail à tout moment, selon vos besoins. Nous vous répondrons dans les plus brefs délais avec plaisir.
                 </p>
                 <p class="contact-info">{{ contact.messagerie }}</p>
             </div>
         </div>
-        <img src="/assets/image/picture-contact.jpg" class="picture-article order-1 order-md-2" alt="...">
+        <img src="/uploads/picture-contact.jpg" class="picture-article order-1 order-md-2" alt="...">
     </section>
     <!-- A R T I C L E - C O N T A C T -->
 
@@ -142,8 +142,8 @@
     <!-- P I C T U R E - F O O T E R -->
     <section id="picture-footer">
         <picture>
-            <source srcset="/assets/image/picture-1-phone.jpg" media="(max-width: 768px)">
-            <img src="/assets/image/picture-footer.jpg" class="picture" alt="...">
+            <source srcset="/uploads/picture-1-phone.jpg" media="(max-width: 768px)">
+            <img src="/uploads/picture-footer.jpg" class="picture" alt="...">
         </picture>
     </section>
     <!-- P I C T U R E - F O O T E R -->

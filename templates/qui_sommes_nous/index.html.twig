@@ -6,7 +6,7 @@
     <section id="navbar">
         <div class="bg-navbar"></div>
         <a href="{{ path('app_home') }}">
-            <img src="/assets/image/logo-sahara.png" class="logo" alt="Logo Sahara">
+            <img src="/uploads/logo-sahara.png" class="logo" alt="Logo Sahara">
         </a>
         <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
@@ -35,8 +35,8 @@
                         </li>
                     </ul>
                     <div class="d-flex align-items-center">
-                        <img src="/assets/image/icone-facebook.png" class="icone-facebook ms-3" alt="Icône Facebook">
-                        <img src="/assets/image/icone-insta.png" class="icone-instagram ms-3" alt="Icône Instagram">
+                        <img src="/uploads/icone-facebook.png" class="icone-facebook ms-3" alt="Icône Facebook">
+                        <img src="/uploads/icone-insta.png" class="icone-instagram ms-3" alt="Icône Instagram">
                     </div>
                 </div>
             </div>
@@ -47,13 +47,13 @@
     <!-- P I C T U R E - H E A D E R -->
     <section id="picture-header">
         <picture>
-            <source srcset="/assets/image/picture-1-phone.jpg" media="(max-width: 768px)">
-            <img src="/assets/image/picture-header-quisommenous.jpg" class="picture" alt="...">
+            <source srcset="/uploads/picture-1-phone.jpg" media="(max-width: 768px)">
+            <img src="/uploads/picture-header-quisommenous.jpg" class="picture" alt="...">
         </picture>
         <div class="text-container">
             <div class="top-line">
                 <p class="p-header">L'équipe de</p>
-                <img src="/assets/image/icone-logo.png" class="icone-logo" alt="...">            </div>
+                <img src="/uploads/icone-logo.png" class="icone-logo" alt="...">            </div>
             <h1 class="h-header">SAHARA VENTURA.</h1>
         </div>
     </section>
@@ -69,8 +69,8 @@
             <h1 class="t-article">{{ article5.titre}}</h1>
             <p class="p-article col-10">{{ article5.description}}</p>
         </div>
-       <img src="{{ asset('assets/image/' ~ article5.photo) }}" class="picture-article order-1 order-md-2 col-8" alt="...">
-        <img src="/assets/image/icone-4x4.png" class="icone-comment order-3" alt="...">
+       <img src="{{ asset('uploads/' ~ article5.photo) }}" class="picture-article order-1 order-md-2 col-8" alt="...">
+        <img src="/uploads/icone-4x4.png" class="icone-comment order-3" alt="...">
         </div>
     </section>
     <!-- A R T I C L E - R I G H T -->
@@ -78,7 +78,7 @@
     <!-- C A R D S - I N D E X -->
     <section id="cards-contact" class="row">
         <div class="cards col-12 col-md-4">
-            <img src="/assets/image/people-2.jpg" class="picture-cards" alt="...">
+            <img src="/uploads/people-2.jpg" class="picture-cards" alt="...">
             <div class="bg-article">
                 <h1 class="t-article">Lorem Ispu</h1>
                 <p class="p-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -89,7 +89,7 @@
             </div>
         </div>
         <div class="cards col-12 col-md-4">
-            <img src="/assets/image/people-1.jpg" class="picture-cards" alt="...">
+            <img src="/uploads/people-1.jpg" class="picture-cards" alt="...">
             <div class="bg-article">
                 <h1 class="t-article">Lorem Ispu</h1>
                 <p class="p-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -100,7 +100,7 @@
             </div>
         </div>
         <div class="cards col-12 col-md-4">
-            <img src="/assets/image/people-3.jpg" class="picture-cards" alt="...">
+            <img src="/uploads/people-3.jpg" class="picture-cards" alt="...">
             <div class="bg-article">
                 <h1 class="t-article">Lorem Ispu</h1>
                 <p class="p-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -117,21 +117,21 @@
     <section id="article-contact" class="row">
         <div class="bg-article order-2 order-md-1">
             <div class="contact-phone">
-                <img src="/assets/image/icone-phone.png" class="icone-info" alt="...">
+                <img src="/uploads/icone-phone.png" class="icone-info" alt="...">
                 <h1 class="t-article">Téléphone :</h1>
                 <p class="p-article">Vous pouvez nous appeler du lundi au vendredi, de 9h à 17h, pour toute information. Notre équipe est à votre écoute et prête à répondre à vos questions.
                 </p>
                 <p class="contact-info">{{ contact.telephone }}</p>
             </div>
             <div class="contact-mail">
-                <img src="/assets/image/icone-mail.png" class="icone-info" alt="...">
+                <img src="/uploads/icone-mail.png" class="icone-info" alt="...">
                 <h1 class="t-article">Adresse e-mail</h1>
                 <p class="p-article">Vous pouvez nous contacter par e-mail à tout moment, selon vos besoins. Nous vous répondrons dans les plus brefs délais avec plaisir.
                 </p>
                 <p class="contact-info">{{ contact.messagerie }}</p>
             </div>
         </div>
-        <img src="/assets/image/picture-contact.jpg" class="picture-article order-1 order-md-2" alt="...">
+        <img src="/uploads/picture-contact.jpg" class="picture-article order-1 order-md-2" alt="...">
     </section>
     <!-- A R T I C L E - C O N T A C T -->
 
@@ -142,8 +142,8 @@
     <!-- P I C T U R E - F O O T E R -->
     <section id="picture-footer">
         <picture>
-            <source srcset="/assets/image/picture-1-phone.jpg" media="(max-width: 768px)">
-            <img src="/assets/image/picture-footer.jpg" class="picture" alt="...">
+            <source srcset="/uploads/picture-1-phone.jpg" media="(max-width: 768px)">
+            <img src="/uploads/picture-footer.jpg" class="picture" alt="...">
         </picture>
     </section>
     <!-- P I C T U R E - F O O T E R -->

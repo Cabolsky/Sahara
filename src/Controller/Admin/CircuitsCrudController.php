@@ -26,35 +26,40 @@ class CircuitsCrudController extends AbstractCrudController
             TextField::new('titreCards'),
             TextField::new('texteCards'),
             ImageField::new('photoCards')
-            ->setBasePath('/assets/image')
-            ->setUploadDir('public/assets/image') 
+                ->setBasePath('/uploads')  // Changement du chemin
+                ->setUploadDir('public/uploads')  // Changement du répertoire de destination
                 ->setUploadedFileNamePattern('[slug]-[timestamp].[extension]')
                 ->setHelp('Dimensions : 640px x 500px')
-                ->setRequired(false),
+                ->setRequired(false)
+                ->setFormTypeOptions(['allow_file_upload' => true]),  // Option pour permettre l'upload du fichier
             ImageField::new('photoHeader')
-            ->setBasePath('/assets/image')
-            ->setUploadDir('public/assets/image') 
+                ->setBasePath('/uploads')  // Changement du chemin
+                ->setUploadDir('public/uploads')  // Changement du répertoire de destination
                 ->setUploadedFileNamePattern('[slug]-[timestamp].[extension]')
                 ->setHelp('Dimensions : 1920px x 600px')
-                ->setRequired(false),
+                ->setRequired(false)
+                ->setFormTypeOptions(['allow_file_upload' => true]),  // Option pour permettre l'upload du fichier
             ImageField::new('photoJour1')
-            ->setBasePath('/assets/image')
-            ->setUploadDir('public/assets/image') 
+                ->setBasePath('/uploads')  // Changement du chemin
+                ->setUploadDir('public/uploads')  // Changement du répertoire de destination
                 ->setUploadedFileNamePattern('[slug]-[timestamp].[extension]')
                 ->setHelp('Dimensions : 1100px x 600px')
-                ->setRequired(false),
+                ->setRequired(false)
+                ->setFormTypeOptions(['allow_file_upload' => true]),  // Option pour permettre l'upload du fichier
             ImageField::new('photoJour2')
-            ->setBasePath('/assets/image')
-            ->setUploadDir('public/assets/image') 
+                ->setBasePath('/uploads')  // Changement du chemin
+                ->setUploadDir('public/uploads')  // Changement du répertoire de destination
                 ->setUploadedFileNamePattern('[slug]-[timestamp].[extension]')
                 ->setHelp('Dimensions : 1100px x 600px')
-                ->setRequired(false),
+                ->setRequired(false)
+                ->setFormTypeOptions(['allow_file_upload' => true]),  // Option pour permettre l'upload du fichier
             ImageField::new('photoJour3')
-            ->setBasePath('/assets/image')
-            ->setUploadDir('public/assets/image') 
+                ->setBasePath('/uploads')  // Changement du chemin
+                ->setUploadDir('public/uploads')  // Changement du répertoire de destination
                 ->setUploadedFileNamePattern('[slug]-[timestamp].[extension]')
                 ->setHelp('Dimensions : 1100px x 600px')
-                ->setRequired(false),
+                ->setRequired(false)
+                ->setFormTypeOptions(['allow_file_upload' => true]),  // Option pour permettre l'upload du fichier
             TextField::new('villeDepart'),
             TextField::new('villeArrivee'),
             TextField::new('nombrePersonnes'),
