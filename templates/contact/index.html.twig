@@ -6,7 +6,7 @@
     <section id="navbar">
         <div class="bg-navbar"></div>
         <a href="{{ path('app_home') }}">
-            <img src="/uploads/logo-sahara.png" class="logo" alt="Logo Sahara">
+            <img src="/uploads/logo-sahara.png" class="logo" alt="Logo Sahara-Escapade">
         </a>
         <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
@@ -48,12 +48,12 @@
     <section id="picture-header">
         <picture>
             <source srcset="/uploads/picture-1-phone.jpg" media="(max-width: 768px)">
-            <img src="/uploads/picture-header-contact.jpg" class="picture" alt="...">
+            <img src="/uploads/picture-header-contact.jpg" class="picture" alt="Paysage marocain">
         </picture>
         <div class="text-container">
             <div class="top-line">
                 <p class="p-header">Une question ?</p>
-                <img src="/uploads/icone-logo.png" class="icone-logo" alt="...">
+                <img src="/uploads/icone-logo.png" class="icone-logo" alt="Icone info">
             </div>
             <h1 class="h-header">CONTACTEZ-NOUS.</h1>
         </div>
@@ -92,8 +92,8 @@
             <h1 class="t-info">{{ contact.ville }}</h1>
             <h1 class="t-info">{{ contact.pays }}</h1>
         </div>
-       <img src="{{ asset('uploads/' ~ article7.photo) }}" class="picture-article order-1 order-md-2 col-8" alt="...">
-        <img src="/uploads/icone-4x4.png" class="icone-comment order-3" alt="...">
+       <img src="{{ asset('uploads/' ~ article7.photo) }}" class="picture-article order-1 order-md-2 col-8" alt="{{ article7.titre}}">
+        <img src="/uploads/icone-4x4.png" class="icone-comment order-3" alt="Icone info">
         </div>
     </section>
     <!-- A R T I C L E - R I G H T -->
@@ -106,7 +106,7 @@
     <section id="picture-footer">
         <picture>
             <source srcset="/uploads/picture-1-phone.jpg" media="(max-width: 768px)">
-            <img src="/uploads/picture-footer.jpg" class="picture" alt="...">
+            <img src="/uploads/picture-footer.jpg" class="picture" alt="Paysage marocain">
         </picture>
     </section>
     <!-- P I C T U R E - F O O T E R -->

@@ -6,7 +6,7 @@
     <section id="navbar">
         <div class="bg-navbar"></div>
         <a href="{{ path('app_home') }}">
-            <img src="/uploads/logo-sahara.png" class="logo" alt="Logo Sahara">
+            <img src="/uploads/logo-sahara.png" class="logo" alt="Logo Sahara-Escapade">
         </a>
         <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
@@ -48,12 +48,12 @@
     <section id="picture-header">
         <picture>
             <source srcset="{{ asset('uploads/' ~ excursion.photoHeader) }}" media="(max-width: 768px)">
-            <img src="{{ asset('uploads/' ~ excursion.photoHeader) }}" class="picture" alt="...">
+            <img src="{{ asset('uploads/' ~ excursion.photoHeader) }}" class="picture" alt="{{ excursion.titreCards}}">
         </picture>
         <div class="text-container">
             <div class="top-line">
                 <p class="p-header">Nôtre excursion</p>
-                <img src="/uploads/icone-logo.png" class="icone-logo" alt="...">            
+                <img src="/uploads/icone-logo.png" class="icone-logo" alt="Icone info">            
             </div>
             <h1 class="h-header">{{ excursion.titreCards}}</h1>
         </div>
@@ -64,49 +64,49 @@
     <section id="article-info">
         <div class="row col-10 mx-auto mt-md-1">
             <div class="containt-info">
-                <img src="/uploads/icone-start.png" class="icone-info" alt="...">
+                <img src="/uploads/icone-start.png" class="icone-info" alt="Icone info">
                 <p class="p-info">Départ :
                 </p>
                 <p class="p-details">{{ excursion.villeDepart }}
                 </p>
             </div>
             <div class="containt-info">
-                <img src="/uploads/icone-location.png" class="icone-info" alt="...">
+                <img src="/uploads/icone-location.png" class="icone-info" alt="Icone info">
                 <p class="p-info">Arrivée :
                 </p>
                 <p class="p-details">{{ excursion.villeDepart }}
                 </p>
             </div>
             <div class="containt-info">
-                <img src="/uploads/icone-group.png" class="icone-info" alt="...">
+                <img src="/uploads/icone-group.png" class="icone-info" alt="Icone info">
                 <p class="p-info">Personnes :
                 </p>
                 <p class="p-details">{{ excursion.nombrePersonnes }}
                 </p>
             </div>
             <div class="containt-info">
-                <img src="/uploads/icone-clock.png" class="icone-info" alt="...">
+                <img src="/uploads/icone-clock.png" class="icone-info" alt="Icone info">
                 <p class="p-info">Durée :
                 </p>
                 <p class="p-details">{{ excursion.duree }}
                 </p>
             </div>
             <div class="containt-info">
-                <img src="/uploads/icone-bed.png" class="icone-info" alt="...">
+                <img src="/uploads/icone-bed.png" class="icone-info" alt="Icone info">
                 <p class="p-info">Nuit :
                 </p>
                 <p class="p-details">{{ excursion.hebergement }}
                 </p>
             </div>
             <div class="containt-info">
-                <img src="/uploads/icone-food.png" class="icone-info" alt="...">
+                <img src="/uploads/icone-food.png" class="icone-info" alt="Icone info">
                 <p class="p-info">Repas :
                 </p>
                 <p class="p-details">{{ excursion.repas }}
                 </p>
             </div>
             <div class="containt-info">
-                <img src="/uploads/icone-price.png" class="icone-info" alt="...">
+                <img src="/uploads/icone-price.png" class="icone-info" alt="Icone info">
                 <p class="p-info">A partir :</p>
                 <p class="p-details mt-md-0 mt-5">{{ excursion.prix }} €/pers.</p> 
             </div>
@@ -116,8 +116,8 @@
 
     <!-- A R T I C L E - L E F T -->
     <section id="article-left" class="row">
-        <img src="{{ asset('uploads/' ~ excursion.photoJour1) }}" class="picture-article" alt="...">
-        <img src="/uploads/icone-palmier.png" class="icone-comment" alt="...">
+        <img src="{{ asset('uploads/' ~ excursion.photoJour1) }}" class="picture-article" alt="{{ excursion.titreJour1 }}">
+        <img src="/uploads/icone-palmier.png" class="icone-comment" alt="Icone info">
         <div class="bg-article">
             <h1 class="t-article">{{ excursion.titreJour1 }}</h1>
             <p class="p-article">{{ excursion.texteJour1 }}
@@ -130,21 +130,21 @@
     <section id="article-contact" class="row">
         <div class="bg-article order-2 order-md-1">
             <div class="contact-phone">
-                <img src="/uploads/icone-phone.png" class="icone-info" alt="...">
+                <img src="/uploads/icone-phone.png" class="icone-info" alt="Icone info">
                 <h1 class="t-article">Téléphone :</h1>
                 <p class="p-article">Vous pouvez nous appeler du lundi au vendredi, de 9h à 17h, pour toute information. Notre équipe est à votre écoute et prête à répondre à vos questions.
                 </p>
                 <p class="contact-info">{{ contact.telephone }}</p>
             </div>
             <div class="contact-mail">
-                <img src="/uploads/icone-mail.png" class="icone-info" alt="...">
+                <img src="/uploads/icone-mail.png" class="icone-info" alt="Icone info">
                 <h1 class="t-article">Adresse e-mail</h1>
                 <p class="p-article">Vous pouvez nous contacter par e-mail à tout moment, selon vos besoins. Nous vous répondrons dans les plus brefs délais avec plaisir.
                 </p>
                 <p class="contact-info">{{ contact.messagerie }}</p>
             </div>
         </div>
-        <img src="/uploads/picture-contact.jpg" class="picture-article order-1 order-md-2" alt="...">
+        <img src="/uploads/picture-contact.jpg" class="picture-article order-1 order-md-2" alt="Paysage marocain">
     </section>
     <!-- A R T I C L E - C O N T A C T -->
 
@@ -156,7 +156,7 @@
     <section id="picture-footer">
         <picture>
             <source srcset="/uploads/picture-1-phone.jpg" media="(max-width: 768px)">
-            <img src="/uploads/picture-footer.jpg" class="picture" alt="...">
+            <img src="/uploads/picture-footer.jpg" class="picture" alt="Paysage marocain">
         </picture>
     </section>
     <!-- P I C T U R E - F O O T E R -->

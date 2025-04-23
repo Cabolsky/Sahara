@@ -6,7 +6,7 @@
     <section id="navbar">
         <div class="bg-navbar"></div>
         <a href="{{ path('app_home') }}">
-            <img src="/uploads/logo-sahara.png" class="logo" alt="Logo Sahara">
+            <img src="/uploads/logo-sahara.png" class="logo" alt="Logo Sahara-Escapade">
         </a>
         <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
@@ -48,12 +48,13 @@
     <section id="picture-header">
         <picture>
             <source srcset="/uploads/picture-1-phone.jpg" media="(max-width: 768px)">
-            <img src="/uploads/picture-header-quisommenous.jpg" class="picture" alt="...">
+            <img src="/uploads/picture-header-quisommenous.jpg" class="picture" alt="Paysage marocain">
         </picture>
         <div class="text-container">
             <div class="top-line">
                 <p class="p-header">L'équipe de</p>
-                <img src="/uploads/icone-logo.png" class="icone-logo" alt="...">            </div>
+                <img src="/uploads/icone-logo.png" class="icone-logo" alt="Icone info">            
+            </div>
             <h1 class="h-header">SAHARA VENTURA.</h1>
         </div>
     </section>
@@ -69,8 +70,8 @@
             <h1 class="t-article">{{ article5.titre}}</h1>
             <p class="p-article col-10">{{ article5.description}}</p>
         </div>
-       <img src="{{ asset('uploads/' ~ article5.photo) }}" class="picture-article order-1 order-md-2 col-8" alt="...">
-        <img src="/uploads/icone-4x4.png" class="icone-comment order-3" alt="...">
+       <img src="{{ asset('uploads/' ~ article5.photo) }}" class="picture-article order-1 order-md-2 col-8" alt="{{ article5.titre}}">
+        <img src="/uploads/icone-4x4.png" class="icone-comment order-3" alt="Icone info">
         </div>
     </section>
     <!-- A R T I C L E - R I G H T -->
@@ -78,35 +79,29 @@
     <!-- C A R D S - I N D E X -->
     <section id="cards-contact" class="row">
         <div class="cards col-12 col-md-4">
-            <img src="/uploads/people-2.jpg" class="picture-cards" alt="...">
+            <img src="/uploads/people-2.jpg" class="picture-cards" alt="Photo d'un menbres de l'équipes">
             <div class="bg-article">
-                <h1 class="t-article">Lorem Ispu</h1>
-                <p class="p-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    exercitation ullamco laboris nisiut aliquip ex ea commodo.
+                <h1 class="t-article">Khalid</h1>
+                <p class="p-article">Le guide parfait pour vous faire découvrir la beauté du Maroc ainsi que ses paysages à couper le souffle et vous dévoiler la culture marocaine. 
+                En plus de vous sentir en sécurité, il sera perfectionniste sur les moindres détails afin que votre séjour se passe à merveille.
                 </p>
             </div>
         </div>
         <div class="cards col-12 col-md-4">
-            <img src="/uploads/people-1.jpg" class="picture-cards" alt="...">
+            <img src="/uploads/people-1.jpg" class="picture-cards" alt="Photo d'un menbres de l'équipes">
             <div class="bg-article">
-                <h1 class="t-article">Lorem Ispu</h1>
-                <p class="p-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    exercitation ullamco laboris nisiut aliquip ex ea commodo.
+                <h1 class="t-article">Rachid</h1>
+                <p class="p-article">Rachid est à la tête de notre équipe de guides, il s’assure du bon déroulement des circuits préparés en amont avec les clients et il gère les différentes réservations. 
+                Natif du désert et passionné par son pays, il a une grande expérience des circuits et excursions à travers le Maroc .
                 </p>
             </div>
         </div>
         <div class="cards col-12 col-md-4">
-            <img src="/uploads/people-3.jpg" class="picture-cards" alt="...">
+            <img src="/uploads/people-3.jpg" class="picture-cards" alt="Photo d'un menbres de l'équipes">
             <div class="bg-article">
-                <h1 class="t-article">Lorem Ispu</h1>
-                <p class="p-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    exercitation ullamco laboris nisiut aliquip ex ea commodo.
+                <h1 class="t-article">Mourad</h1>
+                <p class="p-article">La personnalité de notre chauffeur est la combinaison parfaite entre gentillesse, convivialité et respect des clients ce qui est primordial pour notre société. 
+                Vous vous sentirez en sécurité grâce a sa grande connaissance du pays, des routes de l’Atlas et du désert.
                 </p>
             </div>
         </div>
@@ -117,21 +112,21 @@
     <section id="article-contact" class="row">
         <div class="bg-article order-2 order-md-1">
             <div class="contact-phone">
-                <img src="/uploads/icone-phone.png" class="icone-info" alt="...">
+                <img src="/uploads/icone-phone.png" class="icone-info" alt="Icone info">
                 <h1 class="t-article">Téléphone :</h1>
                 <p class="p-article">Vous pouvez nous appeler du lundi au vendredi, de 9h à 17h, pour toute information. Notre équipe est à votre écoute et prête à répondre à vos questions.
                 </p>
                 <p class="contact-info">{{ contact.telephone }}</p>
             </div>
             <div class="contact-mail">
-                <img src="/uploads/icone-mail.png" class="icone-info" alt="...">
+                <img src="/uploads/icone-mail.png" class="icone-info" alt="Icone info">
                 <h1 class="t-article">Adresse e-mail</h1>
                 <p class="p-article">Vous pouvez nous contacter par e-mail à tout moment, selon vos besoins. Nous vous répondrons dans les plus brefs délais avec plaisir.
                 </p>
                 <p class="contact-info">{{ contact.messagerie }}</p>
             </div>
         </div>
-        <img src="/uploads/picture-contact.jpg" class="picture-article order-1 order-md-2" alt="...">
+        <img src="/uploads/picture-contact.jpg" class="picture-article order-1 order-md-2" alt="Paysage marocain">
     </section>
     <!-- A R T I C L E - C O N T A C T -->
 
@@ -143,7 +138,7 @@
     <section id="picture-footer">
         <picture>
             <source srcset="/uploads/picture-1-phone.jpg" media="(max-width: 768px)">
-            <img src="/uploads/picture-footer.jpg" class="picture" alt="...">
+            <img src="/uploads/picture-footer.jpg" class="picture" alt="Paysage marocain">
         </picture>
     </section>
     <!-- P I C T U R E - F O O T E R -->
