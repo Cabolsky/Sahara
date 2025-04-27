@@ -43,6 +43,9 @@ class CircuitController extends AbstractController
             'contact' => $contact,
             'article3' => $article3,
             'title' => 'Circuits - Escapade Sahara',
+            'meta_keywords' => 'circuits, excursions, désert, Maroc, voyage, aventure, trekking, bivouac, escapade Sahara, Ouarzazate, Merzouga, Ait Ben Haddou, excursions privées, randonnée, dromadaire, désert marocain, voyage sur mesure, famille, tourisme, vacances au Maroc',
+            'meta_description' => 'Découvrez nos circuits privés en 4x4 à travers le désert marocain : aventures inoubliables, paysages authentiques, au départ de Marrakech.',
+
         ]);
     }
 
@@ -65,6 +68,9 @@ class CircuitController extends AbstractController
             'contact'      => $contact,
             'article3'     => $article3,
             'title'        => 'Circuits - Escapade Sahara',
+            'meta_keywords' => 'circuits, excursions, désert, Maroc, voyage, aventure, trekking, bivouac, escapade Sahara, Ouarzazate, Merzouga, Ait Ben Haddou, excursions privées, randonnée, dromadaire, désert marocain, voyage sur mesure, famille, tourisme, vacances au Maroc',
+            'meta_description' => 'Découvrez nos circuits privés en 4x4 à travers le désert marocain : aventures inoubliables, paysages authentiques, au départ de Marrakech.',
+
         ]);
     }
 }

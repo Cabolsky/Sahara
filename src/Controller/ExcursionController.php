@@ -43,6 +43,9 @@ class ExcursionController extends AbstractController
             'contact'      => $contact,
             'article4'     => $article4,
             'title'        => 'Excursions - Escapade Sahara',
+            'meta_keywords' => 'circuits, excursions, désert, Maroc, voyage, aventure, trekking, bivouac, escapade Sahara, Ouarzazate, Merzouga, Ait Ben Haddou, excursions privées, randonnée, dromadaire, désert marocain, voyage sur mesure, famille, tourisme, vacances au Maroc',
+            'meta_description' => 'Partez pour une excursion en 4x4 dans le désert marocain : escapades sur mesure, immersion dans les dunes et villages traditionnels.',
+
         ]);
     }
 
@@ -65,6 +68,9 @@ class ExcursionController extends AbstractController
             'contact'      => $contact,
             'article4'     => $article4,
             'title'        => 'Excursions - Escapade Sahara',
+            'meta_keywords' => 'circuits, excursions, désert, Maroc, voyage, aventure, trekking, bivouac, escapade Sahara, Ouarzazate, Merzouga, Ait Ben Haddou, excursions privées, randonnée, dromadaire, désert marocain, voyage sur mesure, famille, tourisme, vacances au Maroc',
+            'meta_description' => 'Partez pour une excursion en 4x4 dans le désert marocain : escapades sur mesure, immersion dans les dunes et villages traditionnels.',
+
         ]);
     }
 }

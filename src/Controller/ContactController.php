@@ -38,6 +38,9 @@ final class ContactController extends AbstractController
             'contact'         => $contact,
             'article7'        => $article7,
             'title'           => 'Contact - Escapade Sahara',
+            'meta_keywords' => 'circuits, excursions, désert, Maroc, voyage, aventure, trekking, bivouac, escapade Sahara, Ouarzazate, Merzouga, Ait Ben Haddou, excursions privées, randonnée, dromadaire, désert marocain, voyage sur mesure, famille, tourisme, vacances au Maroc',
+            'meta_description' => 'Contactez Escapade Sahara pour organiser votre circuit ou excursion dans le désert marocain. Réponse rapide et conseils personnalisés.',
+
         ]);
     }
 }

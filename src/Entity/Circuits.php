@@ -5,14 +5,20 @@ namespace App\Entity;
 use App\Repository\CircuitsRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\HttpFoundation\File\File;
 
 #[ORM\Entity(repositoryClass: CircuitsRepository::class)]
+#[Vich\Uploadable]
 class Circuits
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
     private ?int $id = null;
+
+    #[Vich\UploadableField(mapping: 'circuits_images', fileNameProperty: 'photoCards')]
+    private ?File $photoCardsFile = null;
 
     #[ORM\Column(length: 255)]
     private ?string $photoCards = null;
@@ -22,6 +28,9 @@ class Circuits
 
     #[ORM\Column(type: Types::TEXT)]
     private ?string $texteCards = null;
+
+    #[Vich\UploadableField(mapping: 'circuits_images', fileNameProperty: 'photoHeader')]
+    private ?File $photoHeaderFile = null;
 
     #[ORM\Column(length: 255)]
     private ?string $photoHeader = null;
@@ -47,6 +56,9 @@ class Circuits
     #[ORM\Column(type: Types::STRING)]
     private ?string $prix = null;
 
+    #[Vich\UploadableField(mapping: 'circuits_images', fileNameProperty: 'photoJour1')]
+    private ?File $photoJour1File = null;
+
     #[ORM\Column(length: 255)]
     private ?string $photoJour1 = null;
 
@@ -56,6 +68,9 @@ class Circuits
     #[ORM\Column(type: Types::TEXT)]
     private ?string $texteJour1 = null;
 
+    #[Vich\UploadableField(mapping: 'circuits_images', fileNameProperty: 'photoJour2')]
+    private ?File $photoJour2File = null;
+
     #[ORM\Column(length: 255)]
     private ?string $photoJour2 = null;
 
@@ -64,6 +79,9 @@ class Circuits
 
     #[ORM\Column(type: Types::TEXT)]
     private ?string $texteJour2 = null;
+
+    #[Vich\UploadableField(mapping: 'circuits_images', fileNameProperty: 'photoJour3')]
+    private ?File $photoJour3File = null;
 
     #[ORM\Column(length: 255)]
     private ?string $photoJour3 = null;
@@ -332,5 +350,71 @@ class Circuits
         $this->texteJour3 = $texteJour3;
 
         return $this;
+    }
+
+    // Getters and Setters for file uploads
+    public function getPhotoCardsFile(): ?File
+    {
+        return $this->photoCardsFile;
+    }
+
+    public function setPhotoCardsFile(?File $photoCardsFile = null): void
+    {
+        $this->photoCardsFile = $photoCardsFile;
+        if ($photoCardsFile) {
+            $this->updatedAt = new \DateTime();
+        }
+    }
+
+    public function getPhotoHeaderFile(): ?File
+    {
+        return $this->photoHeaderFile;
+    }
+
+    public function setPhotoHeaderFile(?File $photoHeaderFile = null): void
+    {
+        $this->photoHeaderFile = $photoHeaderFile;
+        if ($photoHeaderFile) {
+            $this->updatedAt = new \DateTime();
+        }
+    }
+
+    public function getPhotoJour1File(): ?File
+    {
+        return $this->photoJour1File;
+    }
+
+    public function setPhotoJour1File(?File $photoJour1File = null): void
+    {
+        $this->photoJour1File = $photoJour1File;
+        if ($photoJour1File) {
+            $this->updatedAt = new \DateTime();
+        }
+    }
+
+    public function getPhotoJour2File(): ?File
+    {
+        return $this->photoJour2File;
+    }
+
+    public function setPhotoJour2File(?File $photoJour2File = null): void
+    {
+        $this->photoJour2File = $photoJour2File;
+        if ($photoJour2File) {
+            $this->updatedAt = new \DateTime();
+        }
+    }
+
+    public function getPhotoJour3File(): ?File
+    {
+        return $this->photoJour3File;
+    }
+
+    public function setPhotoJour3File(?File $photoJour3File = null): void
+    {
+        $this->photoJour3File = $photoJour3File;
+        if ($photoJour3File) {
+            $this->updatedAt = new \DateTime();
+        }
     }
 }

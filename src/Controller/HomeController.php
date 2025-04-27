@@ -25,6 +25,8 @@ final class HomeController extends AbstractController
 
         return $this->render('home/index.html.twig', [
             'title'        => 'Accueil - Escapade Sahara',
+            'meta_description' => 'Bienvenue sur Escapade Sahara : circuits sur mesure, excursions dans le désert, expériences inoubliables au Maroc.',
+            'meta_keywords' => 'circuits, excursions, désert, Maroc, voyage, aventure, trekking, bivouac, escapade Sahara, Ouarzazate, Merzouga, Ait Ben Haddou, excursions privées, randonnée, dromadaire, désert marocain, voyage sur mesure, famille, tourisme, vacances au Maroc',
             'article1'     => $article1,
             'article2'     => $article2,
             'commentaires' => $commentaires,

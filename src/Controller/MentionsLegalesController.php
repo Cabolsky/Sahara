@@ -14,6 +14,9 @@ final class MentionsLegalesController extends AbstractController
         return $this->render('mentions_legales/index.html.twig', [
             'controller_name' => 'MentionsLegalesController',
             'title'           => 'Mentions Légales - Escapade Sahara',
+            'meta_keywords' => 'circuits, excursions, désert, Maroc, voyage, aventure, trekking, bivouac, escapade Sahara, Ouarzazate, Merzouga, Ait Ben Haddou, excursions privées, randonnée, dromadaire, désert marocain, voyage sur mesure, famille, tourisme, vacances au Maroc',
+            'meta_description' => 'Consultez les mentions légales du site Escapade Sahara : informations légales, éditeur du site, hébergeur et politique de confidentialité.',
+
         ]);
     }
 }
